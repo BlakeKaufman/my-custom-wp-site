@@ -12,25 +12,11 @@
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="profile" href="https://gmpg.org/xfn/11"> -->
 
-
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/style.css">
-    
-
-    
     <?php 
-    // wp_head(); 
-    // getting currnt file name
-    $current_url = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
-    $current_file = basename($current_url);
+    wp_head(); 
+    ?>
 
-    if ( $current_file === "mibourbon-wordpress" ) {
-    ?>
-     <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/css/homepage.css">
-    <?php
-    }
-    ?>
   </head>
 
   <body <?php body_class(); ?>>
@@ -200,26 +186,4 @@
   <!-- cart slideout -->
   <!-- ----------------------------------- -->
   <section class="cart-slideout">
-    <!-- <div class="topbar">
-        <div class="logo"></div>
-        <img src="<?= get_template_directory_uri()?>/assets/images/x-lg.svg" alt="" class="close-sidebar">
-    </div>
-    <div class="products-container">
-        <div class="product-scroll-container">
-           
-        </div>
-    </div>
-    <div class="bottom">
-        <div class="sub-total">
-            <span>Cart Subtotal</span>
-            <span class="total">$99.99</span>
-        </div>
-        <div class="message">
-            <span>Taxes and shipping calculated at checkout</span>
-            <span>*Free Shipping on all orders $250+</span>
-        </div>
-        <div class="checkout-BTN">
-            <a href="./checkout-page.php">Check out</a>
-        </div>
-    </div> -->
-    </section>
+  </section>

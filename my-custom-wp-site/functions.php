@@ -1,48 +1,41 @@
 <?php
 
-function load_custom_styles() {
-    if (is_page('front-page')) {
+function varchas_load_custom_styles() {
+    if (is_front_page()) {
         wp_enqueue_style('homepage-styles', get_template_directory_uri() . '/assets/css/homepage.css');
     } elseif (is_page('services')) {
         wp_enqueue_style('services-styles', get_template_directory_uri() . '/css/services-styles.css');
     } elseif (is_page('contact')) {
         wp_enqueue_style('contact-styles', get_template_directory_uri() . '/css/contact-styles.css');
     }
+
 }
 add_action('wp_enqueue_scripts', 'load_custom_styles');
 
 
-// function load_custom_styles() {
-//     if ( is_page( '1' ) ) {
-//         wp_enqueue_style( 'custom-page-styles', get_stylesheet_directory_uri() . '/css/homepage.css');
-//     }
+function varchas_register_scripts(){
+    if (is_front_page()) {
+        wp_enqueue_script('varchas-slideingNav', get_template_directory_uri(), "/assets/js/add-to-cart.js", array(), "1.0", true); //true places script in footer
+        wp_enqueue_script('varchas-navBar', get_template_directory_uri(), "/assets/js/nav-bar.js", array(), "1.0", true); //true places script in footer
+        wp_enqueue_script('varchas-hompage_mobileNav', get_template_directory_uri(), "/assets/js/mobbileHeader.js", array(), "1.0", true); //true places script in footer
+
+    } elseif (is_page('services')) {
+        wp_enqueue_style('services-styles', get_template_directory_uri() . '/css/services-styles.css');
+    } elseif (is_page('contact')) {
+        wp_enqueue_style('contact-styles', get_template_directory_uri() . '/css/contact-styles.css');
+    }
 
 
-//     wp_enqueue_style('varchas-blake-coding', get_template_directory_uri(), "/style.css", array(), "1.0", 'all');
-// }
-// add_action( 'wp_enqueue_scripts', 'load_custom_styles' );
+    // $version = wp_get_theme() ->("Version"); //getting version of style sheet dynamicaly
+    wp_enqueue_style('varchas-blake-coding', get_template_directory_uri(), "/style.css", array(), "1.0", 'all');
 
-// function varchas_register_styles(){
+} // calls when  wp_head() is called
 
-//     // $version = wp_get_theme() ->("Version"); //getting version of style sheet dynamicaly
-//     wp_enqueue_style('varchas-blake-coding', get_template_directory_uri(), "/style.css", array(), "1.0", 'all');
-
-// } // calls when  wp_head() is called
-
-// add_action('wp_enqueue_scripts', "varchas_register_styles" );
+add_action('wp_enqueue_scripts', "varchas_register_scripts" );
 
 
 
-// function varchas_register_scripts(){
 
-
-//     //$version = wp_get_theme() ->("Version"); //getting version of style sheet dynamicaly
-//     wp_enqueue_script('varchas-slideingNav', get_template_directory_uri(), "/assets/js/add-to-cart.js", array(), "1.0", true); //true places script in footer
-//     wp_enqueue_script('varchas-navBar', get_template_directory_uri(), "/assets/js/nav-bar.js", array(), "1.0", true); //true places script in footer
-
-// } // calls when  wp_footer() is called
-
-// add_action('wp_enqueue_scripts', "varchas_register_scripts" );
 
 
 
