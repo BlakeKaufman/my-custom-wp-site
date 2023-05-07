@@ -231,7 +231,7 @@ function showCart() {
     html = `
         <div class="topbar">
             <div class="logo"></div>
-            <img src="./assets/images/x-lg.svg" alt="" class="close-sidebar">
+            <img src="<?= get_template_directory_uri()?>/assets/images/x-lg.svg" alt="" class="close-sidebar">
         </div>
         <div class="products-container">
         

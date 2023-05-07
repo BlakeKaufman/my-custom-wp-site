@@ -4,13 +4,13 @@
 
 <section class="content">
 
-  <?php get_template_part("./template-parts/homepage/banner.php")?>
+  <?php get_template_part("template-parts/homepage/banner")?>
 
   <!-- mobile header -->
-  <?php get_template_part("./template-parts/homepage/mobile_header.php")?>
+  <?php get_template_part("template-parts/homepage/mobile_header")?>
   <!-- mobile header -->
-  <?php get_template_part("./template-parts/homepage/desktop_index_cards.php")?>
-  <?php get_template_part("./template-parts/homepage//mobile_index_cards.php")?>
+  <?php get_template_part("template-parts/homepage/desktop_index_cards")?>
+  <?php get_template_part("template-parts/homepage/mobile_index_cards")?>
 
 </section>
 

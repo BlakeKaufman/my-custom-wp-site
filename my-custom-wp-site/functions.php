@@ -1,5 +1,17 @@
 <?php
 
+function load_custom_styles() {
+    if (is_page('front-page')) {
+        wp_enqueue_style('homepage-styles', get_template_directory_uri() . '/assets/css/homepage.css');
+    } elseif (is_page('services')) {
+        wp_enqueue_style('services-styles', get_template_directory_uri() . '/css/services-styles.css');
+    } elseif (is_page('contact')) {
+        wp_enqueue_style('contact-styles', get_template_directory_uri() . '/css/contact-styles.css');
+    }
+}
+add_action('wp_enqueue_scripts', 'load_custom_styles');
+
+
 // function load_custom_styles() {
 //     if ( is_page( '1' ) ) {
 //         wp_enqueue_style( 'custom-page-styles', get_stylesheet_directory_uri() . '/css/homepage.css');

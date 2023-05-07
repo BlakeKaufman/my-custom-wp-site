@@ -21,13 +21,11 @@
     
     <?php 
     // wp_head(); 
-    $current_page = $current_page = get_queried_object();
-    $current_page_title = $current_page->post_title;
-    echo $current_page;
-    echo "<br>";
-    echo $current_page_title;
+    // getting currnt file name
+    $current_url = "http://{$_SERVER['HTTP_HOST']}{$_SERVER['REQUEST_URI']}";
+    $current_file = basename($current_url);
 
-    if ( is_page( '1' ) ) {
+    if ( $current_file === "mibourbon-wordpress" ) {
     ?>
      <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/css/homepage.css">
     <?php
@@ -45,7 +43,7 @@
       <div class="navContainerDesktop">
         <a href="./index.html"
           ><div class="logo">
-            <img src="./assets/images/logo.png" alt="" srcset="" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/logo.png" alt="" srcset="" />
             <span>VARCHAS</span>
           </div></a
         >
@@ -55,7 +53,7 @@
               <span><a class="navItem" href="#ourStory">About</a></span>
               <img
                 class="arrow"
-                src="./assets/images/downArrow.svg"
+                src="<?= get_template_directory_uri()?>/assets/images/downArrow.svg"
                 alt=""
                 srcset=""
               />
@@ -73,7 +71,7 @@
               >
               <img
                 class="arrow"
-                src="./assets/images/downArrow.svg"
+                src="<?= get_template_directory_uri()?>/assets/images/downArrow.svg"
                 alt=""
                 srcset=""
               />
@@ -90,7 +88,7 @@
               <span class="navItem">Resorces</span>
               <img
                 class="arrow"
-                src="./assets/images/downArrow.svg"
+                src="<?= get_template_directory_uri()?>/assets/images/downArrow.svg"
                 alt=""
                 srcset=""
               />
@@ -106,7 +104,7 @@
         </ul>
         <div class="shop-container">
           <div class="imageContainer">
-            <img src="./assets/images/shopping-cart.png" alt="" class="cart" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/shopping-cart.png" alt="" class="cart" />
             <div class="item-count"></div>
           </div>
         </div>
@@ -116,17 +114,17 @@
       <div class="navContainerMobile">
         <div class="logo">
           <a href="./index.html"
-            ><img src="./assets/images/logo.png" alt="" srcset=""
+            ><img src="<?= get_template_directory_uri()?>/assets/images/logo.png" alt="" srcset=""
           /></a>
         </div>
         <div class="shop-container">
           <div class="imageContainer">
-            <img src="./assets/images/shopping-cart.png" alt="" class="cart" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/shopping-cart.png" alt="" class="cart" />
             <div class="item-count"></div>
           </div>
           <img
             class="mobileMenuBtn"
-            src="./assets/images/list.svg"
+            src="<?= get_template_directory_uri()?>/assets/images/list.svg"
             alt=""
             srcset=""
           />
@@ -142,7 +140,7 @@
             <span><a class="navItem drop" href="#ourStory">About</a></span>
             <img
               class="arrow"
-              src="./assets/images/plusIcon.svg"
+              src="<?= get_template_directory_uri()?>/assets/images/plusIcon.svg"
               alt=""
               srcset=""
             />
@@ -162,7 +160,7 @@
             >
             <img
               class="arrow"
-              src="./assets/images/plusIcon.svg"
+              src="<?= get_template_directory_uri()?>/assets/images/plusIcon.svg"
               alt=""
               srcset=""
             />
@@ -179,7 +177,7 @@
             <span><a class="navItem drop" href="#">Resorces</a></span>
             <img
               class="arrow"
-              src="./assets/images/plusIcon.svg"
+              src="<?= get_template_directory_uri()?>/assets/images/plusIcon.svg"
               alt=""
               srcset=""
             />
@@ -204,7 +202,7 @@
   <section class="cart-slideout">
     <!-- <div class="topbar">
         <div class="logo"></div>
-        <img src="./assets/images/x-lg.svg" alt="" class="close-sidebar">
+        <img src="<?= get_template_directory_uri()?>/assets/images/x-lg.svg" alt="" class="close-sidebar">
     </div>
     <div class="products-container">
         <div class="product-scroll-container">
