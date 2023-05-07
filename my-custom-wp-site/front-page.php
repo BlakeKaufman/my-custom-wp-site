@@ -1,5 +1,5 @@
 <!-- landing page for website -->
-<?php get_header(); ?> <!-- calls the header file though  a bilt in function get_template_part( 'header' ); -->
+<?php get_template_part("header"); ?> <!-- calls the header file though  a bilt in function get_template_part( 'header' ); -->
 
 
 <section class="content">

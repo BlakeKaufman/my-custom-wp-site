@@ -11,8 +11,10 @@ Text Domain: my-custom-theme
 Tags: custom-background
 */
 
+/* ----------------------------------------- */
+/* root */
+/* ----------------------------------------- */
 :root {
-  /* ////////////////////////////////// */
   /* Text Colors */
   --mainGoldTxt: #edb62b;
   --mainWhiteTxt: #ffffff;
@@ -27,6 +29,10 @@ Tags: custom-background
   --aboutUsBack: #fffaef;
 }
 
+/* ----------------------------------------- */
+/* Index */
+/* ----------------------------------------- */
+/* all elements */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,10 +40,7 @@ Tags: custom-background
   font-size: 18px;
   border: 0;
 }
-html{
-margin: 0;
-overflow-x: hidden;
-}
+/* html elements */
 body {
   width: 100vw;
   overflow-x: hidden;
@@ -71,11 +74,9 @@ input[type="submit"] {
   object-position: center;
 }
 
-/* --------------------------------- */
+/* ----------------------------------------- */
 /* nav bar */
-/* --------------------------------- */
-/* ////////////////////////////// */
-/* Nav bar start */
+/* ----------------------------------------- */
 nav {
   width: 100%;
   height: 70px;
@@ -270,83 +271,9 @@ nav .mobileMenuBtn {
     display: none;
   }
 }
-/* Nav bar end */
-/* ////////////////////////////// */
-
-/* --------------------------------- */
-/* BANNER */
-/* --------------------------------- */
-
-#banner {
-  width: 100vw;
-  height: 300px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  position: relative;
-}
-#banner .banner_image {
-  width: 100%;
-  height: 100%;
-
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-
-  background: gray;
-}
-#banner .banner_TxT {
-  font-size: 55px;
-  letter-spacing: 5px;
-}
-
-/* --------------------------------- */
-/* HEADER */
-/* --------------------------------- */
-header {
-  width: 100vw;
-  height: fit-content;
-
-  background-color: blanchedalmond;
-}
-.nav_container {
-  height: 80px;
-  width: 95%;
-  max-width: 900px;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  margin: 0 auto;
-}
-.nav_container .item_container {
-  display: flex;
-  align-items: center;
-}
-
-.nav_item_img_container {
-  width: 50px;
-  height: 50px;
-  border: 1px solid black;
-  margin-right: 10px;
-  background-color: black;
-}
-.nav_item_img_container img {
-  object-fit: contain;
-}
-@media screen and (max-width: 900px) {
-  .nav_container {
-    display: none;
-  }
-}
-/* --------------------------------- */
-/* CART SLIDEOUT */
-/* --------------------------------- */
-
+/* ----------------------------------------- */
+/* Cart slideout  */
+/* ----------------------------------------- */
 .cart-slideout {
   width: 400px;
   height: 100vh;
@@ -535,36 +462,4 @@ header {
 
   background-color: black;
   color: white;
-}
-/* bottom */
-
-/* --------------------------------- */
-/* FOOTER */
-/* --------------------------------- */
-footer {
-  width: 100vw;
-  height: fit-content;
-  background-color: black;
-  color: white;
-}
-.footer_container {
-  height: 50px;
-  width: 97%;
-
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  font-size: 12px;
-}
-.footer_nav {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0 auto 0 auto;
-}
-.footer_nav li {
-  margin: 0 8px;
 }
