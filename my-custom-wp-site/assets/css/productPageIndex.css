@@ -1,0 +1,10 @@
+.postsMainContainer {
+  width: 95%;
+  max-width: 1450px;
+  height: fit-content;
+
+  display: flex;
+  justify-content: center;
+
+  margin: 50px auto;
+}

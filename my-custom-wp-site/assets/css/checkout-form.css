@@ -1,0 +1,106 @@
+.checkout-form {
+  width: 95%;
+  max-width: 1100px;
+  height: fit-content;
+  margin: 50px auto;
+}
+.checkout-form form {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+/* styling all inputs */
+.checkout-form form input,
+textarea {
+  border: 1px solid black;
+  padding: 10px;
+}
+/* styling all inputs */
+.checkout-form form .cupon-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 20px;
+  cursor: pointer;
+}
+.checkout-form form .cupon-container .text-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+
+  flex-direction: column;
+  text-align: center;
+}
+.checkout-form form .cupon-container .code-container {
+  width: 100%;
+  height: fit-content;
+  display: none;
+
+  justify-content: center;
+}
+.checkout-form form .cupon-container .code-container button {
+  background-color: black;
+  margin-left: 5px;
+  padding: 10px;
+  color: white;
+}
+
+.checkout-form form .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.checkout-form form .container .input-container {
+  display: flex;
+  flex-direction: column;
+}
+.checkout-form form .container .input-container:not(:last-child) {
+  margin-bottom: 20px;
+}
+.checkout-form form .container .input-container input,
+textarea {
+  margin: 10px 0 0;
+}
+/* billing container side */
+.checkout-form form .container .billing {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+.checkout-form form .container .billing .title {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+/* billing container side */
+.checkout-form form .container .additional-information {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+}
+.checkout-form form .container .additional-information .title {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.checkout-form form .container .additional-information textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+}
+@media screen and (max-width: 700px) {
+  .checkout-form form .container {
+    flex-direction: column;
+  }
+  .checkout-form form .container .billing {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .checkout-form form .container .additional-information {
+    width: 100%;
+  }
+}
