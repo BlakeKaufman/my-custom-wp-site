@@ -14,8 +14,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <link rel="profile" href="https://gmpg.org/xfn/11"> -->
 
+
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/style.css">
     
-    <?php wp_head(); ?>
+
+    
+    <?php 
+    // wp_head(); 
+    $current_page = $current_page = get_queried_object();
+    $current_page_title = $current_page->post_title;
+    echo $current_page;
+    echo "<br>";
+    echo $current_page_title;
+
+    if ( is_page( '1' ) ) {
+    ?>
+     <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/css/homepage.css">
+    <?php
+    }
+    ?>
   </head>
 
   <body <?php body_class(); ?>>

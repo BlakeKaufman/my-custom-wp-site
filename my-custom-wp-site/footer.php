@@ -17,6 +17,10 @@
 </footer>
 
 
+<script src="<?php echo get_template_directory_uri()?>/js/add-to-cart.js"></script>
+<script src="<?php echo get_template_directory_uri()?>/js/nav-bar.js"></script>
+
+
 <?php wp_footer(); ?>
 	</body>
 </html>
