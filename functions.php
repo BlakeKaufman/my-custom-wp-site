@@ -2,7 +2,11 @@
 
 function varchas_load_custom_styles() {
     if (is_front_page()) {
-        null
+        wp_enqueue_style('homepageAwards-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/awards.css');
+        wp_enqueue_style('homepageAwards-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/contactForm.css');
+        wp_enqueue_style('homepageAwards-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/recipies-homepage.css');
+        wp_enqueue_style('homepageAwards-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+        wp_enqueue_style('homepageAwards-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/homepage.css');
     } elseif (is_page('services')) {
         // wp_enqueue_style('services-styles', get_template_directory_uri() . 'assets/css/ecommerce/services-styles.css');
     } elseif (is_page('contact')) {
