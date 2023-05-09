@@ -1,0 +1,355 @@
+/* ///////////////////////// */
+/* main sectin styling */
+/* ///////////////////////// */
+.mainContent {
+  width: 100vw;
+  height: 700px;
+  padding: 70px 0 0 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+.mainContent .map {
+  width: 700px;
+  height: 100%;
+  background-color: black;
+}
+.mainContent .storeLocations {
+  width: calc(100% - 750px);
+  height: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+.mainContent .announcementBar {
+  width: 100%;
+
+  background-color: #c6961c;
+
+  color: white;
+  font-size: 30px;
+  text-align: center;
+
+  border: 1px solid var(--mainGoldTxt);
+  font-family: Montserrat;
+
+  margin-bottom: auto;
+  padding: 20px 10px;
+}
+.mainContent .announcementBar span {
+  font-size: 30px;
+}
+.mainContent .stores {
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 20px;
+}
+.mainContent .stores .header {
+  width: 100%;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 20px;
+}
+.mainContent .stores form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent .stores form input,
+select {
+  height: 50px;
+  width: 100%;
+
+  display: block;
+
+  background-color: white;
+  border: 1px solid #707070;
+
+  margin: 5px 0 20px 0;
+}
+.mainContent .stores form .responsiveContainer {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.mainContent .stores form .responsiveContainer .inputContainer {
+  width: 145px;
+}
+
+.mainContent .stores form .searchContainer {
+  width: calc(100% - 310px);
+}
+
+.mainContent .stores .warning {
+  margin-bottom: 20px;
+}
+.mainContent .stores .warning span {
+  font-family: Montserrat;
+  font-size: 15px;
+}
+.mainContent .storeLocationContainer {
+  display: flex;
+  flex-direction: column;
+}
+.mainContent .storeOverflowContainer {
+  height: 300px;
+  overflow-y: scroll;
+}
+.mainContent .storeLocationContainer .store:not(:last-child) {
+  margin-bottom: 50px;
+}
+.mainContent .storeLocationContainer .store {
+  width: 100%;
+  display: flex;
+}
+.mainContent .storeLocationContainer .store .adressSide {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent .storeLocationContainer .store .adressSide span:not(:last-child) {
+  margin-bottom: 10px;
+}
+.mainContent .storeLocationContainer .store .adressSide span:first-child {
+  font-weight: bold;
+  font: Montserrat;
+}
+.mainContent .storeLocationContainer .store .adressSide span:last-child {
+  width: max-content;
+  color: #edb62b;
+  text-decoration: underline;
+}
+/* /////////////////////////////////////// */
+/* contact section  */
+
+.contactSection {
+  width: 100vw;
+  height: fit-content;
+  margin: 70px 0 0 0;
+  background-color: #f6f6f6;
+}
+
+/* ///////////////////////// */
+/* sellingSignUp styling */
+/* ///////////////////////// */
+
+.contactSection .sellingSignUp {
+  width: 100%;
+  max-width: 1500px;
+
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px 20px;
+}
+/* left */
+.contactSection .sellingSignUp .left {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.contactSection .sellingSignUp .header {
+  width: 100%;
+  max-width: 400px;
+
+  margin: 0 auto;
+
+  text-align: center;
+  font: bold 35px Perpetua;
+
+  color: #846410;
+  text-transform: uppercase;
+}
+.contactSection .sellingSignUp .desc {
+  width: 100%;
+  max-width: 550px;
+
+  margin: 10px auto;
+  text-align: center;
+  font: 25px FreightBig Pro;
+}
+.contactSection .sellingSignUp .productCode {
+  margin: 0 auto;
+}
+.contactSection .sellingSignUp form {
+  width: calc(100% - 530px);
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.contactSection .sellingSignUp form > *:not(:last-child) {
+  margin-bottom: 50px;
+}
+.contactSection .sellingSignUp form input,
+textarea {
+  background-color: unset;
+  border: unset;
+}
+.contactSection .sellingSignUp form input {
+  border-bottom: 1px solid var(--mainGoldTxt);
+}
+.contactSection .sellingSignUp form textarea {
+  border: 1px solid var(--mainGoldTxt);
+  resize: none;
+}
+.contactSection .sellingSignUp form .name_email {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contactSection .sellingSignUp form .name_email input {
+  width: 49%;
+}
+
+/* .contactSection .sellingSignUp form .captcha {
+  width: 300px;
+  height: 100px;
+  align-self: center;
+  background-color: white;
+  margin: 20px 0;
+} */
+
+.contactSection .sellingSignUp form input[type="submit"] {
+  width: max-content;
+  height: 50px;
+  background-color: #c6961c;
+  color: white;
+  padding: 0 30px;
+  font: medium Montserrat;
+}
+/* respnsiveness */
+@media screen and (max-width: 1430px) {
+  .mainContent .map {
+    width: calc(100% - 730px);
+  }
+  .mainContent .storeLocations {
+    width: 680px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .mainContent {
+    height: fit-content;
+
+    flex-direction: column;
+  }
+  .mainContent .storeLocations {
+    width: 95%;
+    max-width: unset;
+    margin: 0 auto;
+  }
+  .mainContent .announcementBar {
+    margin-bottom: 10px;
+  }
+  .mainContent .map {
+    width: 95%;
+    height: 500px;
+    margin: 20px auto;
+  }
+}
+@media screen and (max-width: 760px) {
+  .mainContent .announcementBar span {
+    font-size: min(25px, 8vw);
+  }
+
+  .mainContent .stores form {
+    flex-direction: column;
+  }
+  .mainContent .stores form .responsiveContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .mainContent .stores form .responsiveContainer .inputContainer {
+    width: 49%;
+  }
+
+  .mainContent .stores form .searchContainer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 850px) {
+  /* ///////////////////////// */
+  /* sellingSignUp styling */
+  /* ///////////////////////// */
+
+  .contactSection .sellingSignUp {
+    flex-direction: column;
+  }
+  /* left */
+  .contactSection .sellingSignUp .left {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .contactSection .sellingSignUp .header {
+    font: bold 30px Perpetua;
+  }
+  .contactSection .sellingSignUp .desc {
+    font: 18px FreightBig Pro;
+  }
+
+  .contactSection .sellingSignUp form {
+    width: 100%;
+    max-width: unset;
+  }
+}
+
+/* ///////////////////////// */
+/* popup styling */
+/* ///////////////////////// */
+.zipCodePopup {
+  width: 100vw;
+  height: 100vh;
+
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+  background-color: rgba(172, 172, 172, 0.7);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.zipCodePopup .content {
+  width: 80%;
+  max-width: 500px;
+  min-width: 275px;
+  padding: 20px;
+  border: 1px solid var(--mainGoldTxt);
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+.zipCodePopup .content form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.zipCodePopup .content form input:first-child {
+  margin-bottom: 20px;
+}
+.zipCodePopup .content form input:last-child {
+  width: 50%;
+  min-width: 140px;
+  padding: 0;
+  align-self: center;
+}
+/* ///////////////////////// */
+/* changing master styles */
+/* ///////////////////////// */
+footer {
+  margin-top: 0;
+}
+
+select {
+  padding: 0 10px;
+}

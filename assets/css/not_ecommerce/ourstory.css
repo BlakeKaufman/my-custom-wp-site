@@ -1,0 +1,101 @@
+.mainTextContainer {
+  width: 100vw;
+  height: fit-content;
+
+  font-size: min(25px, 5vw);
+  display: flex;
+}
+
+.mainTextContainer .mainTitleContainer {
+  height: 300px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(236, 235, 235);
+  position: relative;
+}
+
+.mainTextContainer .mainTitleContainer img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: 10%;
+}
+/* .mainTextContainer .mainTitle {
+  font-size: min(70px, 12vw);
+} */
+
+.mainTextContainer .allText {
+  width: 100%;
+  max-width: 1500px;
+  height: fit-content;
+  margin: 0 auto;
+
+  line-height: 40px;
+
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainDescription {
+  width: calc(100% - 540px);
+  margin-left: 20px;
+  padding: 20px 0;
+}
+.mainDescription p:not(:last-child) {
+  margin-bottom: 20px;
+}
+.mainTextContainer .image {
+  width: min(500px, 90vw);
+  height: 700px;
+}
+.mainTextContainer .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1150px) {
+  .mainTextContainer .allText {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .mainTextContainer .image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  .mainTextContainer .mainDescription {
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mainTextContainer .allText {
+    width: 95%;
+    text-align: center;
+  }
+  .mainTextContainer .image {
+    width: 100%;
+  }
+}
+
+/* changing global styles */
+.awardWiskey {
+  height: 800px;
+  background-color: #f2f2f2;
+}
+@media screen and (max-width: 950px) {
+  .awardWiskey {
+    height: fit-content;
+    background-color: unset;
+  }
+}

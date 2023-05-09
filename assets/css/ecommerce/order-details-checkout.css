@@ -1,0 +1,212 @@
+.order-details {
+  width: 95%;
+  max-width: 1100px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+}
+
+/* order details stying */
+.order-details .content-container {
+  width: 100%;
+  max-width: 600px;
+
+  margin-bottom: 30px;
+}
+/* products styling */
+.order-details .content-container .products {
+  width: 100%;
+  border-bottom: 3px solid black;
+  margin-bottom: 20px;
+}
+.order-details .content-container .products .product-catagory {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.order-details .content-container .products .product-catagory .top {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+.order-details
+  .content-container
+  .products
+  .product-catagory
+  .top
+  span:first-child {
+  width: 80%;
+  font-size: 25px;
+  font-weight: bold;
+}
+.order-details
+  .content-container
+  .products
+  .product-catagory
+  .top
+  span:last-child {
+  width: 10%;
+
+  font-size: 25px;
+}
+.order-details
+  .content-container
+  .products
+  .product-catagory
+  .ordered-products {
+  width: 95%;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+.order-details
+  .content-container
+  .products
+  .product-catagory
+  .ordered-products
+  span {
+  font-size: 20px;
+}
+.order-details
+  .content-container
+  .products
+  .product-catagory
+  .ordered-products
+  .product {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+.order-details
+  .content-container
+  .products
+  .product-catagory
+  .ordered-products
+  .product:not(:last-child) {
+  margin-bottom: 10px;
+}
+.order-details
+  .content-container
+  .products
+  .product-catagory
+  .ordered-products
+  .product
+  span:first-child {
+  width: 79%;
+}
+
+/* products styling */
+
+/* order details stying */
+/* totals styling */
+.order-details .content-container .totals {
+  width: 100%;
+}
+.order-details .content-container .totals span {
+  font-size: 20px;
+}
+.order-details .content-container .totals .totals-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.order-details .content-container .totals .totals-container:not(:last-child) {
+  margin-bottom: 20px;
+}
+.order-details .content-container .totals .totals-container span:first-child {
+  width: 80%;
+  text-align: right;
+  padding-right: 20px;
+}
+.order-details .content-container .totals .totals-container span:last-child {
+  width: 10%;
+}
+/* total styling */
+
+/* .order-details .title {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.order-details .order-breakdown {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.order-details .order-breakdown th {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.order-details .order-breakdown tr {
+  height: 60px;
+  border-bottom: 1px solid rgb(105, 105, 105);
+} */
+
+/* global stying */
+/* .order-details .order-breakdown .uppercase {
+  text-transform: uppercase;
+}
+.order-details .order-breakdown .bold {
+  font-weight: bold;
+} */
+
+.order-details form {
+  width: 100%;
+  max-width: 450px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 20px 0;
+}
+.order-details form .radio-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.order-details form input[type="radio"] {
+  display: none;
+}
+
+.order-details form label {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.order-details form label span {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.order-details form label:before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 0;
+}
+
+.order-details form input[type="radio"]:checked + label:before {
+  background-color: #000;
+}
+
+.order-details form button {
+  width: 150px;
+  height: 50px;
+
+  padding: 10px 20px;
+  background-color: #c6961c;
+
+  color: white;
+}

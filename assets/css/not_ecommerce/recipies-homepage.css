@@ -1,0 +1,163 @@
+/* recipies container */
+.signitureRec {
+  width: 100vw;
+  height: fit-content;
+  margin-top: 50px;
+}
+.signitureRec .signitureRecContainer {
+  width: 95%;
+  max-width: 1460px;
+  height: fit-content;
+
+  display: flex;
+  justify-content: left;
+
+  margin: 0 auto;
+  flex-wrap: wrap;
+  opacity: 1;
+}
+
+.signitureRec .recepeContainer {
+  /* width: 25%; */
+  position: relative;
+  width: 325px;
+  /* max-width: 400px; */
+  height: 520px;
+  /* max-height: 530px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  overflow: hidden;
+  padding: 0 0 15px 0;
+  margin: 20px 20px;
+  /* background-color: #fff8e8; */
+  background: transparent linear-gradient(216deg, #505050 0%, #000000 100%) 0%
+    0% no-repeat padding-box;
+}
+.signitureRec .recepeContainer .popup {
+  height: 22%;
+  width: 100%;
+
+  position: absolute;
+  z-index: 2;
+
+  transition: height 1s;
+
+  bottom: 0;
+  color: white;
+  /* backdrop-filter: blur(10px); */
+}
+.signitureRec .recepeContainer .popupContainer {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 0 auto;
+
+  /* overflow-y: scroll; */
+}
+.signitureRec .recepeContainer .popupContent {
+  width: 85%;
+  height: 80%;
+
+  display: flex;
+
+  font-size: 20px;
+  margin-bottom: 10px;
+  opacity: 0;
+}
+.signitureRec .recepeContainer .popupContent li {
+  margin: 20px 0;
+}
+.signitureRec .recepeContainer .closePopupBtn {
+  width: 40px;
+  height: auto;
+
+  cursor: pointer;
+
+  position: absolute;
+  z-index: 9;
+  top: 2%;
+  right: 2%;
+
+  display: block;
+  opacity: 0;
+}
+.signitureRec .imgContainer {
+  width: 100%;
+  height: 90%;
+  transition: opacity 1s cubic-bezier(0.45, 0.05, 0.55, 0.95);
+}
+
+.signitureRec .imgContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.signitureRec .title {
+  width: 80%;
+  text-align: left;
+  font-family: var(--montR);
+  font-size: 25px;
+  padding-top: 10px;
+  border-top: 1px solid gold;
+  transition: margin 1s;
+}
+
+.signitureRec .recepieBtn {
+  width: 80%;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-size: 15px;
+
+  margin: 0 auto 10px;
+
+  cursor: pointer;
+  justify-content: left;
+}
+@media screen and (max-width: 1100px) {
+  .signitureRec {
+    height: fit-content;
+  }
+  .signitureRec .recepeContainer {
+    margin: 20px 15px;
+    padding: 0 0 20px 0;
+  }
+  /* .signitureRec .recepeMastContainer {
+      display: none;
+    } */
+}
+/* @media screen and (max-width: 850px) {
+    .signitureRec .title {
+      font-size: 25px;
+    }
+    .signitureRec .recepieBtn {
+      font-size: 20px;
+    }
+  } */
+
+@media screen and (max-width: 480px) {
+  .signitureRec .recepeMastContainer {
+    padding: 20px 0;
+  }
+  .signitureRec .title {
+    font-size: 23px;
+  }
+  .signitureRec .recepieBtn {
+    font-size: 18px;
+  }
+  .signitureRec .recepeContainer {
+    margin: 20px 0;
+    padding: 0 0 20px 0;
+  }
+}

@@ -1,0 +1,197 @@
+/* ////////////////////////////// */
+/* awarded wiskey section start */
+
+.awardWiskey {
+  width: 100vw;
+  height: 800px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.awardWiskey .container {
+  width: 100%;
+
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.awardWiskey .container .scrollContainer {
+  width: 100%;
+
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.awardWiskey .container .backgroundCircle {
+  width: min(550px, 45vw);
+  height: min(550px, 45vw);
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  border-radius: 50%;
+  background-color: var(--mainGoldTxt);
+}
+.awardWiskey .container .contentContainer {
+  height: min(500px, 40vw);
+  width: 50%;
+  display: flex;
+  transform: translateX(20px);
+}
+.awardWiskey .container .contentContainer .txt {
+  /* width: calc(100% - 250px); */
+  display: flex;
+  flex-direction: column;
+  margin-top: 15%;
+  margin-bottom: auto;
+  flex-wrap: wrap;
+}
+.awardWiskey .container .contentContainer .txt span:first-child {
+  font-size: min(2.5vw, 30px);
+}
+.awardWiskey .container .contentContainer .txt span:nth-child(2) {
+  font-size: min(3vw, 35px);
+  font-weight: bold;
+}
+.awardWiskey .container .contentContainer .txt span:last-child {
+  font-size: min(1.2vw, 15px);
+}
+/* right styling */
+.awardWiskey .container .rightTxtContainer {
+  flex-direction: row-reverse;
+  transform: translateX(-20px) translateY(-50px);
+  text-align: left;
+}
+.awardWiskey .container .rightTxtContainer .txt {
+  margin-top: auto;
+  text-align: right;
+  margin-bottom: 15%;
+}
+
+/* css mask */
+.awardWiskey .container .contentContainer .img {
+  height: 100%;
+}
+.awardWiskey .container .contentContainer .img img {
+  height: 100%;
+}
+
+/* slide btns */
+.slideBTN {
+  display: none;
+  position: absolute;
+  font-size: 30px;
+  background-color: white;
+  padding: 10px 5px;
+  border: 1px solid var(--mainGoldTxt);
+  cursor: pointer;
+}
+.rightSlideBTN {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.leftSlideBTN {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+@media screen and (max-width: 950px) {
+  .awardWiskey {
+    height: fit-content;
+    margin-top: 200px;
+  }
+  .awardWiskey .container {
+    width: 95%;
+    max-width: 500px;
+    height: 600px;
+
+    justify-content: unset;
+
+    overflow: hidden;
+    background-color: var(--mainGoldTxt);
+    padding: 10px 0;
+  }
+  .awardWiskey .container .scrollContainer {
+    width: max-content;
+    height: 100%;
+  }
+  .awardWiskey .container .backgroundCircle {
+    display: none;
+  }
+  .awardWiskey .container .contentContainer {
+    height: 100%;
+    width: min(500px, 90vw);
+    align-items: center;
+    flex-direction: column;
+
+    transition: transform 0.75s;
+  }
+  .awardWiskey .container .contentContainer .txt {
+    width: max-content;
+    text-align: center;
+    margin: auto 0 0 0;
+  }
+  .awardWiskey .container .contentContainer .txt span:first-child {
+    font-size: 30px;
+  }
+  .awardWiskey .container .contentContainer .txt span:nth-child(2) {
+    font-size: 35px;
+  }
+  .awardWiskey .container .contentContainer .txt span:last-child {
+    font-size: 15px;
+  }
+  .awardWiskey .container .contentContainer .img {
+    height: 80%;
+    width: auto;
+    margin-top: 20px;
+  }
+  .slideBTN {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1054px) {
+  /* .awardWiskey {
+    height: fit-content;
+  } */
+  .awardWiskey .awardContainer {
+    margin: 30px 0;
+  }
+  .awardWiskey .text {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .awardWiskey .awardContainer {
+    width: 100%;
+    min-width: 350px;
+  }
+  .awardWiskey .mainImage {
+    width: 65%;
+  }
+
+  .awardWiskey .medal {
+    font-size: 35px;
+  }
+}
+
+/* awarded wiskey section end */
+/* ////////////////////////////// */

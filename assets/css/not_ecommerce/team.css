@@ -1,0 +1,65 @@
+.teamContainer {
+  width: 100vw;
+  height: fit-content;
+
+  color: black;
+}
+
+.teamContainer .mainTitleContainer .textContainer {
+  height: fit-content;
+  width: 95%;
+}
+.teamContainer .header {
+  font-size: min(70px, 12vw);
+}
+.teamContainer .team {
+  width: 100%;
+  max-width: 1000px;
+
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  margin: 50px auto;
+}
+.teamContainer .member {
+  width: 300px;
+  margin: 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.teamContainer .img {
+  width: 250px;
+  height: 300px;
+
+  margin-bottom: 20px;
+}
+.teamContainer .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.teamContainer .name {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.teamContainer .position {
+  font-size: 12px;
+}
+@media screen and (max-width: 480px) {
+  .teamContainer .member {
+    width: 300px;
+    margin: 20px auto;
+  }
+}
+
+/* removing global styles */
+footer {
+  margin: 0;
+}

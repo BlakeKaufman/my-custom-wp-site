@@ -1,0 +1,450 @@
+.main {
+  width: 100vw;
+  height: fit-content;
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.main .container {
+  width: 95%;
+  max-width: 1600px;
+  height: fit-content;
+  margin: 3vh 0;
+}
+.main .bourbonContainer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.main .bourbonContainer .contents {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* left side start */
+
+.main .bourbonContainer .left {
+  width: 40%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+}
+.main .bourbonImage {
+  width: 100%;
+  height: 480px;
+  position: relative;
+}
+.main .bourbonImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  z-index: 2;
+}
+.main .bourbonImage .backgroundCircle {
+  width: 315px;
+  height: 315px;
+  position: absolute;
+  bottom: 5px;
+  left: 46%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  z-index: 1;
+  background: #ecc45d;
+}
+.main .buttons {
+  width: 100%;
+  max-width: 300px;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 30px;
+}
+.main .Bourbonbutton:first-child {
+  background-color: #c6961c;
+  color: white;
+  border: unset;
+}
+.main .buttonsOutsie {
+  width: 100%;
+  max-width: 305px;
+
+  display: none;
+  justify-content: space-between;
+  align-self: center;
+
+  margin: 30px 0;
+}
+
+.main .Bourbonbutton {
+  border: 1px solid black;
+
+  font-size: min(20px);
+
+  padding: 10px 20px;
+}
+
+/* left side end */
+/* ////////////////////////////////////////////////// */
+/* right side start */
+.main .bourbonContainer .right {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+
+  font-family: var(--montR);
+}
+.right .bourbonTitle {
+  width: 100%;
+  font-size: 60px;
+  color: #846410;
+  border-bottom: 1px solid black;
+  text-transform: uppercase;
+}
+.right .bourbonTitle span {
+  font-size: 60px;
+  font-weight: bold;
+}
+.right .attributeContainer {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: min(25px, 4vw);
+
+  margin: 20px 0;
+}
+.right .leftAttribute {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.right .rightAttribute {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+.right .attribute {
+  color: #846410;
+  text-transform: uppercase;
+}
+.attributeDesc {
+  width: 100%;
+  max-width: 300px;
+
+  margin-top: 10px;
+
+  font-size: 18px;
+  line-height: 30px;
+}
+.right .alcDescription {
+  font-size: 25px;
+
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+.right .OtherBoubonBtn {
+  width: 100%;
+  font-size: 30px;
+
+  padding: 10px 20px;
+  margin-top: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #ffd600;
+  background-color: #01152b;
+}
+.right .OtherBoubonBtn a {
+  font-size: 25px;
+}
+.right .OtherBoubonBtn img {
+  height: 100%;
+  filter: invert(77%) sepia(70%) saturate(1269%) hue-rotate(359deg)
+    brightness(103%) contrast(104%);
+  transform: rotate(-90deg);
+}
+/* right side end */
+/* ////////////////////////////////////////////////// */
+@media screen and (max-width: 1250px) {
+  /* formatting */
+  .main .contents {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main .buttons {
+    display: none;
+  }
+  .main .buttonsOutsie {
+    display: flex;
+  }
+
+  /* left side */
+  .main .bourbonContainer .left {
+    width: 100%;
+
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+  /* right side */
+  .main .bourbonContainer .right {
+    width: 100%;
+    max-width: 1000px;
+  }
+  .attributeDesc {
+    max-width: unset;
+  }
+  .right .bourbonTitle {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: min(40px, 8.5vw);
+  }
+  .right .bourbonTitle span {
+    font-size: min(40px, 8.5vw);
+  }
+  .right .alcDescription {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 900px) {
+  .right .leftAttribute {
+    text-align: center;
+  }
+  .right .rightAttribute {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .right .bourbonTitle {
+    margin-bottom: 10px;
+  }
+  .right .attributeContainer {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  .right .attributeContainer .rightAttribute {
+    width: 100%;
+  }
+  .right .attributeContainer .leftAttribute {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .right .alcDescription {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .right .OtherBoubonBtn a {
+    font-size: 17px;
+  }
+
+  .main .bourbonImage .backgroundCircle {
+    display: none;
+  }
+}
+/* ////////////////////////////////////////////////// */
+/* awards contaimer start */
+.awardsContainer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 min(80px, 10vw) 0;
+}
+.awardsContainer .container {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.awardsContainer .awards {
+  width: 95%;
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.awardsContainer .awards img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.awardsContainer .text {
+  font-family: var(--montR);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.awardsContainer .text .title {
+  font-size: min(35px, 5vw);
+  color: #846410;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.awardsContainer .text .desctiption {
+  font-size: 18px;
+  color: #2c2c2c;
+}
+/* awards container end */
+/* ////////////////////////////////////////////////// */
+/* Testimionial start */
+.testimonial {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--montR);
+}
+.testimonial .header {
+  color: #846410;
+  text-transform: uppercase;
+  font: bold min(35px, 6vw) Perpetua;
+
+  margin-bottom: min(15px, 10vw);
+  text-align: center;
+}
+
+.testimonial .slideshowContainer {
+  width: 100%;
+  max-width: 950px;
+  height: fit-content;
+  display: inline-flex;
+
+  overflow: hidden;
+}
+.testimonial .slidesContainer {
+  display: flex;
+}
+.slideshow {
+  width: 950px;
+  height: 300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slideshow .left {
+  width: min(250px, 32vw);
+  height: min(250px, 32vw);
+  margin-right: 20px;
+
+  border-radius: 50%;
+  background-color: black;
+}
+.slideshow .left img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.slideshow .right {
+  width: 70%;
+}
+.slideshow .right .description {
+  font-size: min(25px, 3.8vw);
+  font-family: Perpetua;
+
+  margin-bottom: 10px;
+}
+.slideshow .right .name {
+  font-weight: bold;
+  margin-top: 10px;
+  color: #846410;
+}
+@media screen and (max-width: 1000px) {
+  .testimonial .slideshowContainer {
+    width: 100%;
+    max-width: 600px;
+    height: fit-content;
+    display: inline-flex;
+
+    overflow: hidden;
+  }
+  .slideshow {
+    width: 600px;
+    flex-direction: column;
+    height: fit-content;
+    text-align: center;
+  }
+  .slideshow .left {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .slideshow .right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .testimonial .slideshowContainer {
+    width: 100%;
+    max-width: 400px;
+    height: fit-content;
+    display: inline-flex;
+
+    overflow: hidden;
+  }
+  .slideshow {
+    width: 400px;
+    flex-direction: column;
+    height: fit-content;
+    text-align: center;
+  }
+  .slideshow .left {
+    width: 150px;
+    height: 150px;
+  }
+  .slideshow .right {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* top  */
+
+  .awardsContainer .text .title {
+    font-size: 28px;
+  }
+  .awardsContainer .text .desctiption {
+    font-size: 20px;
+  }
+
+  /* bottom */
+  .testimonial .slideshowContainer {
+    width: 100%;
+    max-width: 325px;
+    height: fit-content;
+    display: inline-flex;
+
+    overflow: hidden;
+  }
+  .slideshow {
+    width: 325px;
+    flex-direction: column;
+    height: fit-content;
+    text-align: center;
+  }
+  .slideshow .left {
+    width: 100px;
+    height: 100px;
+  }
+  .slideshow .right {
+    font-size: 18px;
+  }
+}
+
+footer {
+  margin: 0;
+}
+/* Testimionial end */
+/* ////////////////////////////////////////////////// */

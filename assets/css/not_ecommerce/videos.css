@@ -1,0 +1,136 @@
+.videos {
+  width: 100vw;
+  height: fit-content;
+
+  padding-top: max(500px, 80vh);
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  padding-bottom: 100px;
+}
+.videos .backgroundVideo {
+  width: 100vw;
+  height: 100vh;
+  min-height: 600px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  background-color: black;
+}
+.videos .backgroundVideo video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.videos .backgroundVideo img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.videos .mainTitle {
+  position: relative;
+  z-index: 2;
+
+  font: normal normal normal 35px/45px FreightBig Pro;
+  color: white;
+  margin: 0 auto 30px auto;
+}
+.videos .allVideoContainer {
+  width: 95%;
+  max-width: 1200px;
+  height: fit-content;
+  /* min-height: calc(100vh - 100px - 305px); */
+
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.videos .videoContainer {
+  width: max(20vw, 300px);
+  height: fit-content;
+  position: relative;
+  border-radius: 10px;
+  z-index: 2;
+
+  margin: 20px 10px;
+
+  box-shadow: 0px 3px 6px #00000029;
+
+  display: flex;
+  flex-direction: column;
+}
+.videos .videoContainer .video {
+  width: 100%;
+  height: auto;
+  /* max-height: 170px; */
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+.videos .videoContainer .title {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+/* .videos .videoContainer .videoCircle {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.videos .videoContainer .videoCircle img {
+  width: 100%;
+  height: 100%;
+} */
+.videos .lenOfVideo {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  padding: 2px 5px;
+  letter-spacing: 2px;
+  background-color: black;
+  color: white;
+
+  opacity: 0;
+  font-size: 16px;
+}
+.videos .hoverPopup {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  padding: 2px 5px;
+  letter-spacing: 2px;
+  background-color: black;
+  color: white;
+
+  opacity: 0;
+  font-size: 16px;
+}
+
+/* footer */
+footer {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1500px) {
+  .videos .allVideoContainer {
+    max-width: 65vw;
+  }
+}

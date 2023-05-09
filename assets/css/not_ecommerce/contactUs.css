@@ -1,0 +1,285 @@
+.mainContact {
+  width: 100%;
+  /* min-width: 815px; */
+  height: fit-content;
+
+  padding: 150px 0;
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  position: relative;
+}
+.mainContact .container:first-child {
+  margin-bottom: 50px;
+}
+.mainContact .backgroundContact {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  object-position: 90% 50%;
+}
+
+/* firm 1 */
+.mainContact .container {
+  width: 95%;
+  max-width: 800px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 15px;
+  margin-left: 20px;
+
+  background-color: white;
+
+  text-align: center;
+}
+.mainContact .container .left {
+  width: 350px;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+  margin-bottom: auto;
+  margin-top: 50px;
+}
+.container .Title {
+  font-size: 35px;
+  margin: 0 0 15px 0;
+}
+.container .desc {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+/* firm 1 */
+/* form 2 */
+.container-distillary {
+  width: 100%;
+
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: white;
+  background-color: #01152b;
+
+  padding: 50px 0;
+}
+.container-distillary .contentContainer {
+  width: 95%;
+  max-width: 1200px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  color: white;
+  background-color: #01152b;
+  margin: 0 auto;
+}
+.textContainer {
+  width: calc(100%);
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.formTitle {
+  font-size: min(35px, 6vw);
+  margin-bottom: 15px;
+}
+.adress {
+  font-size: min(35px, 4vw);
+}
+.mainContent {
+  width: 95%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto 40px;
+}
+.mainContent .infoContainer {
+  display: flex;
+  flex-direction: column;
+}
+.mainContent .infoContainer:last-child {
+  margin-top: 20px;
+}
+.bold {
+  font-weight: bold;
+}
+.gold {
+  color: var(--mainGoldTxt);
+}
+.distillaryBTN {
+  height: 40px;
+  width: max-content;
+  border: 1.5px solid var(--mainGoldTxt);
+  color: var(--mainGoldTxt);
+  display: flex;
+  align-items: center;
+
+  padding: 0 20px;
+  cursor: pointer;
+}
+/* form 2 */
+
+/* ////////////////////////////////////////// */
+/* distilary popdown */
+.distillaryPopdown {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: rgb(0, 0, 0, 0.7);
+  opacity: 0;
+}
+.distillaryPopdown .content-distillary {
+  width: 800px;
+  height: 500px;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+
+  top: -50%;
+
+  transition: 0.5s;
+
+  background-color: white;
+}
+.distillaryPopdown .content-distillary span {
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* distilary popdown end*/
+/* ////////////////////////////////////////// */
+/* ////////////////////////////////////////// */
+/* sign up popdown */
+
+.container .contactaForm {
+  width: calc(100% - 350px);
+  max-width: 500px;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-color: unset;
+}
+
+.container form input[type="text"],
+input[type="email"],
+textarea,
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  background-color: unset;
+  border: unset;
+  border-bottom: 1px solid #ebc359;
+  margin: 5px 0 20px 0;
+}
+.container form textarea {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #ebc359;
+
+  margin-bottom: 20px;
+  margin-top: 20px;
+  resize: none;
+}
+.container form input[type="submit"] {
+  padding: 0 20px;
+  color: white;
+  background-color: #c6961c;
+  width: max-content;
+  margin: auto 0 0 0;
+}
+.container form .email__phone {
+  display: flex;
+  justify-content: space-between;
+}
+.container form .email__phone .email__phone__INPT {
+  width: 49%;
+}
+/* sign up popdown end*/
+/* /////////////////////////////////////////// */
+
+@media screen and (max-width: 950px) {
+  .mainContact .container {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .mainContact .container .left {
+    width: 100%;
+    text-align: center;
+  }
+  .mainContact .container .left .desc {
+    width: 95%;
+    max-width: 500px;
+    margin: 0 auto 30px;
+
+    text-align: center;
+  }
+  .mainContact .container .contactaForm {
+    width: 95%;
+    max-width: unset;
+  }
+  /* ///////// */
+
+  .mainContact .textContainer {
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 850px) {
+  .distillaryPopdown .content-distillary {
+    width: 95%;
+    height: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* ////////////////////////////////////////// */
+  /* sign up popdown */
+  .container .content-contact .content form {
+    width: 100%;
+  }
+  .container .content-contact .content .desc {
+    width: 95%;
+  }
+  /* sign up popdown end*/
+  /* /////////////////////////////////////////// */
+
+  .distillaryPopdown .content-distillary {
+    width: 95%;
+  }
+}
+
+/* footer */
+footer {
+  margin-top: 20px;
+}
+.joinTheClub {
+  margin: 0;
+  padding: 50px 0;
+}

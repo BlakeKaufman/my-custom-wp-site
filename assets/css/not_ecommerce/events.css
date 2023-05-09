@@ -1,0 +1,202 @@
+/* ///////////////////// */
+/* changing index styles */
+/* ///////////////////// */
+.mainContent .UserContent {
+  width: 95%;
+  min-height: 500px;
+  margin-bottom: 10px;
+}
+
+.mainContent .navigation .right {
+  align-items: center;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* ///////////////////// */
+/* new styles */
+/* ///////////////////// */
+.contentFilter {
+  color: black;
+}
+.contentFilter form {
+  display: flex;
+}
+.contentFilter form .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 10px;
+}
+.contentFilter form .container label {
+  margin-right: 5px;
+}
+.contentFilter form input {
+  height: max-content;
+}
+
+/* post */
+.post {
+  width: 100%;
+  max-width: 900px;
+  height: fit-content;
+
+  margin: 30px 0;
+  display: flex;
+}
+
+.post .textContainer {
+  width: calc(100% - 370px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 0 20px;
+}
+
+.post .textContainer .title {
+  font-size: 25px;
+  font-weight: bold;
+}
+.post .textContainer .dateInfo {
+  max-width: 450px;
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 15px;
+  color: #707070;
+
+  margin: 5px 0 10px 0;
+}
+.post .textContainer .dateInfo span {
+  font-size: 15px;
+}
+.post .textContainer .dateInfo .dateContainer:not(:last-child) {
+  margin-right: 5px;
+}
+.post .textContainer .description {
+  width: 100%;
+
+  font-size: 18px;
+
+  letter-spacing: 0.9px;
+}
+
+.post .readMoreBtn {
+  width: max-content;
+  display: flex;
+  align-items: center;
+
+  border-bottom: 2px solid var(--mainGoldTxt);
+
+  margin-top: auto;
+}
+.post .readMoreBtn img {
+  width: 25px;
+  height: 25px;
+  transform: translateX(0);
+  transition: transform 0.3s;
+}
+.post .readMoreBtn:hover img {
+  transform: translateX(5px);
+}
+
+/* Pagination */
+.pagePagination {
+  width: 200px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+
+  margin: 0 auto;
+}
+.pagePagination .overfowContainer {
+  width: max-content;
+  max-width: 120px;
+  height: 40px;
+
+  overflow-y: scroll;
+}
+.pagePagination .overfowContainer .numbersContainer {
+  width: max-content;
+  height: 40px;
+  display: flex;
+}
+.pagePagination .overfowContainer .numbers {
+  width: 40px;
+  height: 40px;
+  border-right: 0.5px solid #707070;
+  border-left: 0.5px solid #707070;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.pagePagination span {
+  height: 40px;
+  width: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f1f1f1;
+  border: 1px solid #707070;
+  color: #707070;
+  cursor: pointer;
+}
+
+.activePageNumber {
+  background-color: #edb62b;
+}
+@media screen and (max-width: 850px) {
+  /* post */
+  .post {
+    flex-direction: column;
+    align-items: center;
+  }
+  .post .imgContainer {
+    margin-bottom: 10px;
+  }
+  .post .textContainer {
+    width: 100%;
+    margin: 0;
+  }
+
+  .post .textContainer .title {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .post .textContainer .dateInfo {
+    width: 100%;
+
+    margin: 5px auto 10px;
+  }
+
+  .post .textContainer .description {
+    margin-bottom: 20px;
+  }
+
+  .post .readMoreBtn {
+    width: max-content;
+    display: flex;
+    align-items: center;
+
+    border-bottom: 2px solid var(--mainGoldTxt);
+
+    margin-top: auto;
+  }
+  .post .readMoreBtn img {
+    width: 25px;
+    height: 25px;
+    transform: translateX(0);
+    transition: transform 0.3s;
+  }
+  .post .readMoreBtn:hover img {
+    transform: translateX(5px);
+  }
+}

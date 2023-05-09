@@ -1,0 +1,297 @@
+.main {
+  width: 100vw;
+  height: max(100vh, 700px);
+
+  font-family: var(--montR);
+
+  display: flex;
+  align-items: center;
+
+  padding-top: 70px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.main .mainBackground {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+.main .mainText {
+  width: 95%;
+
+  height: 100%;
+
+  display: flex;
+  align-items: baseline;
+
+  margin: 0 auto;
+}
+.main .textContainer {
+  width: 100%;
+  max-width: 900px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+
+  color: white;
+}
+.main .textContainer .title {
+  width: 100%;
+  font-size: 40px;
+  margin: auto 0;
+}
+.main .textContainer span:last-child {
+  width: 100%;
+  max-width: 760px;
+  margin-bottom: auto;
+  line-height: 35px;
+  font-size: 15px;
+}
+.lineBreak {
+  height: 20px;
+}
+
+@media screen and (max-width: 510px) {
+  .main {
+    height: fit-content;
+  }
+
+  .main .mainText {
+    padding: 20px 10px;
+  }
+
+  .main .textContainer .title {
+    margin: 20px 0 50px;
+  }
+  .main .textContainer span:last-child {
+    width: 100%;
+    max-width: 760px;
+    margin-bottom: auto;
+    line-height: 35px;
+    font-size: 15px;
+  }
+  .lineBreak {
+    height: 20px;
+  }
+}
+
+/* tasing room sectoin */
+.tastingRooms {
+  width: 95%;
+  max-width: 900px;
+  height: fit-content;
+
+  margin: 30px auto;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+}
+.tastingRooms span {
+  font-size: min(20px, 4.7vw);
+  line-height: 40px;
+}
+
+.tastingRooms .subTitle {
+  font-size: min(40px, 8.7vw);
+  margin-bottom: 30px;
+  color: #846410;
+}
+
+.tastingRooms .announcement {
+  margin-top: 30px;
+  color: #a7862f;
+}
+
+/* ////////////////////////////// */
+/* Our location start */
+
+#distillary {
+  width: 100vw;
+  /* height: max(70vh - 70px, 600px - 70px); */
+  height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: #01152b;
+}
+
+#distillary .container {
+  width: 80%;
+  max-width: 1500px;
+  height: fit-content;
+
+  padding: 30px 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: white;
+}
+#distillary {
+  font-size: min(25px, 5.4vw);
+}
+#distillary .title {
+  font-size: min(30px, 6vw);
+
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  color: #ebc359;
+}
+#distillary .location {
+  margin-bottom: 30px;
+
+  font-family: var(--montR);
+}
+#distillary .content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: min(30px, 4vh);
+  font-family: var(--montR);
+}
+#distillary .contentTitle {
+  color: #ffd600;
+  margin-bottom: 10px;
+}
+
+#distillary .bookTourBtn {
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 30px;
+
+  font-size: 20px;
+
+  border: 2px solid #ffd600;
+  color: #ffd600;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  #distillary .container {
+    width: 95%;
+    padding: 30px 15px;
+  }
+}
+/* our location end */
+#contact {
+  width: 100vw;
+  height: fit-content;
+  margin: 100px 0;
+}
+#contact .container {
+  width: 95%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+#contact .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact .header span:first-child {
+  font-size: 35px;
+  color: #846410;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+#contact .header span:last-child {
+  width: 100%;
+  max-width: 600px;
+
+  font-size: 25px;
+
+  text-align: center;
+  line-height: 40px;
+
+  text-transform: capitalize;
+}
+#contact form {
+  width: 100%;
+
+  margin-top: 30px;
+}
+#contact form .formContainer {
+  display: flex;
+  justify-content: space-between;
+}
+#contact form .formInput {
+  width: 100%;
+
+  background-color: unset;
+  border: unset;
+  border-bottom: 1px solid #ebc359;
+  font-size: 20px;
+  margin: 30px 0;
+}
+#contact form .formContainerStyle {
+  width: 49%;
+}
+#contact form .formInput::placeholder {
+  font-size: 20px;
+}
+#contact form .formSubmitBtn {
+  width: max-content;
+  height: 50px;
+
+  color: black;
+  font-size: 20px;
+
+  margin-top: auto;
+  margin-bottom: 30px;
+  padding: 0 30px;
+  background-color: unset;
+  border: unset;
+  border: 1px solid #ebc359;
+}
+
+@media screen and (max-width: 500px) {
+  #contact {
+    margin: 100px 0 0 0;
+  }
+
+  #contact .header span:first-child {
+    font-size: 30px;
+  }
+  #contact .header span:last-child {
+    font-size: 20px;
+  }
+
+  #contact form .formContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #contact form .formInput {
+    margin: 25px 0;
+  }
+  #contact form .formContainerStyle {
+    width: 100%;
+  }
+
+  #contact form .formSubmitBtn {
+    margin: 0 auto;
+  }
+}
