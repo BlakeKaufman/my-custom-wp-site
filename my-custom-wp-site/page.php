@@ -1,1 +1,0 @@
-<!-- static page (about me)-->
