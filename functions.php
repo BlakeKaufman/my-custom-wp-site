@@ -2,17 +2,19 @@
 
 function varchas_load_custom_styles() {
     if (is_front_page()) {
+
         wp_enqueue_style('homepageAwards-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/awards.css');
         wp_enqueue_style('homepageContactForm-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/contactForm.css');
         wp_enqueue_style('homepageRecipies-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/recipies-homepage.css');
         wp_enqueue_style('homepageScrollToTopBTN-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
         wp_enqueue_style('homepage-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/homepage.css');
+
     } elseif (is_page('services')) {
         // wp_enqueue_style('services-styles', get_template_directory_uri() . 'assets/css/ecommerce/services-styles.css');
     } elseif (is_page('contact')) {
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
-    } else if (is_page("e_commerceHomepage")){
-        wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/e_commerceHomepage.css');
+    } else if (is_page("shop")){
+        wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
     }
 
 
@@ -24,15 +26,16 @@ add_action('wp_enqueue_scripts', 'varchas_load_custom_styles');
 
 function varchas_register_scripts(){
     if (is_front_page()) {
-        wp_enqueue_script('varchas-homepageRecipieDisplay-js', get_template_directory_uri(), "/assets/js/not_ecommerce/recipeDisplay.js", array(), "1.0", true); 
-        wp_enqueue_script('varchas-homepage-js', get_template_directory_uri(), "/assets/js/not_ecommerce/homepage.js", array(), "1.0", true);
-        wp_enqueue_script('varchas-homepageAwardsMovement-js', get_template_directory_uri(), "/assets/js/not_ecommerce/awardsMovement.js", array(), "1.0", true);  
+        
+        wp_enqueue_script('varchas-homepageRecipieDisplay', get_template_directory_uri(), "/assets/js/not_ecommerce/recipeDisplay.js", array(), "1.0", true); 
+        wp_enqueue_script('varchas-homepage', get_template_directory_uri(), "/assets/js/not_ecommerce/homepage.js", array(), "1.0", true);
+        wp_enqueue_script('varchas-homepageAwardsMovement', get_template_directory_uri(), "/assets/js/not_ecommerce/awardsMovement.js", array(), "1.0", true);  
        
     } elseif (is_page('services')) {
         // wp_enqueue_style('services-styles', get_template_directory_uri() . '/css/services-styles.css');
     } elseif (is_page('contact')) {
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . '/css/contact-styles.css');
-    } else if (is_page("e_commerceHomepage")){
+    } else if (is_page("shop")){
         wp_enqueue_script('varchas-hompage_mobileNav', get_template_directory_uri(), "/assets/js/ecommerce/mobbileHeader.js", array(), "1.0", true); //true places script in footer
     }
 
