@@ -54,7 +54,7 @@
           <div class="rightTxtContainer contentContainer">
             <div class="img">
               <img
-                src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/RyeBottleAward.png"
+                src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/ryeBottleAward.png"
                 alt=""
               />
             </div>
