@@ -230,7 +230,7 @@ function showCart() {
     let CartTotal = 0;
     html = `
         <div class="topbar">
-            <div class="logo"></div>
+            <div class="logo"><img src="${logo_img}" alt="" class="close-sidebar"></div>
             <img src="${x_icon}" alt="" class="close-sidebar">
         </div>
         <div class="products-container">

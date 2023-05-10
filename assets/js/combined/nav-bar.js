@@ -45,8 +45,7 @@ window.addEventListener("load", function () {
       if (!targetElement.classList.contains("dropdownItem")) return;
       // targetElement.children[1].style.animation = "navDropdown linear 0.5s";
       targetElement.children[1].style.display = "flex";
-      targetElement.children[0].children[1].src =
-        "<?= get_template_directory_uri()?>/assets/images/icons/upArrow.svg";
+      targetElement.children[0].children[1].src = `${up_icon_img}`;
     });
   });
 
@@ -56,8 +55,7 @@ window.addEventListener("load", function () {
       if (!targetElement.classList.contains("dropdownItem")) return;
 
       targetElement.children[1].style.display = "none";
-      targetElement.children[0].children[1].src =
-        "<?= get_template_directory_uri()?>/assets/images/icons/downArrow.svg";
+      targetElement.children[0].children[1].src = `${donw_icon_img}`;
     });
   });
 
