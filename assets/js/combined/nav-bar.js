@@ -17,8 +17,7 @@ window.addEventListener("load", function () {
 
     mobileDropdowns.forEach((element) => {
       const icon = element.parentElement.parentElement.children[1];
-      icon.src =
-        "<?= get_template_directory_uri()?>/assets/images/icons/plusIcon.svg";
+      icon.src = `${plus_icon_img}`;
     });
   }
   removeDropdowns();
@@ -55,7 +54,7 @@ window.addEventListener("load", function () {
       if (!targetElement.classList.contains("dropdownItem")) return;
 
       targetElement.children[1].style.display = "none";
-      targetElement.children[0].children[1].src = `${donw_icon_img}`;
+      targetElement.children[0].children[1].src = `${down_icon_img}`;
     });
   });
 
