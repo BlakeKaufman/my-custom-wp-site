@@ -3,7 +3,9 @@
 // ----------------------------------------------
 // Loading stylesheets for differnt pages
 // ----------------------------------------------
-<?php echo esc_url( get_permalink( get_page_by_title( 'Shop' ) ) ); ?>
+
+// echo esc_url( get_permalink( get_page_by_title( 'Shop' ) ) );  how you link to anohter page based on theme title
+
 function varchas_load_custom_styles() {
     // ----------------------------------------------
     // Not Ecommerce Pages
@@ -17,40 +19,69 @@ function varchas_load_custom_styles() {
         wp_enqueue_style('homepage-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/homepage.css');
 
     } elseif (is_page('our-story')) {
-        // wp_enqueue_style('services-styles', get_template_directory_uri() . 'assets/css/ecommerce/services-styles.css');
+        wp_enqueue_style('ourstory-styles-awards', get_template_directory_uri() . '/assets/css/not_ecommerce/awards.css');
+        wp_enqueue_style('ourstory-styles-contactForm', get_template_directory_uri() . '/assets/css/not_ecommerce/contactForm.css');
+        wp_enqueue_style('ourstory-styles-ourstory', get_template_directory_uri() . '/assets/css/not_ecommerce/ourstory.css');
+        wp_enqueue_style('ourstory-styles-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+
     } elseif (is_page('team')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        wp_enqueue_style('team-style-team', get_template_directory_uri() . '/assets/css/not_ecommerce/team.css');
+        wp_enqueue_style('team-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+
     } elseif (is_page('our-distillary')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        wp_enqueue_style('distillary-style-distillary', get_template_directory_uri() . '/assets/css/not_ecommerce/distillery.css');
+        wp_enqueue_style('distillary-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+
     }elseif (is_page('straight-bourbon')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        wp_enqueue_style('straight_bourbon-style', get_template_directory_uri() . '/assets/css/not_ecommerce/rye&bourbon.css');
+        wp_enqueue_style('stright_bourbon-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+
     }elseif (is_page('seraight-rye')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        wp_enqueue_style('straight_rye-style', get_template_directory_uri() . '/assets/css/not_ecommerce/rye&bourbon.css');
+        wp_enqueue_style('straight_rye-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+
     }elseif (is_page('recipies')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        wp_enqueue_style('recipies-style-recipiespage', get_template_directory_uri() . '/assets/css/not_ecommerce/recipies-recipiespage.css');
+        wp_enqueue_style('recipies-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+
     }elseif (is_page('where-to-buy')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        wp_enqueue_style('where_to_buy-style-wheretobuy', get_template_directory_uri() . '/assets/css/not_ecommerce/wheretobuy.css');
+        wp_enqueue_style('where_to_buy-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+
     }elseif (is_page('news')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        wp_enqueue_style('news-style-index', get_template_directory_uri() . '/assets/css/not_ecommerce/news&eventsIndex.css');
+        wp_enqueue_style('news-style-news', get_template_directory_uri() . '/assets/css/not_ecommerce/news.css');
+        wp_enqueue_style('news-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+
     }elseif (is_page('events-and-tastings')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        wp_enqueue_style('events-style-index', get_template_directory_uri() . '/assets/css/not_ecommerce/news&eventsIndex.css');
+        wp_enqueue_style('events-style-events', get_template_directory_uri() . '/assets/css/not_ecommerce/events.css');
+        wp_enqueue_style('events-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+
     }elseif (is_page('blog-and-vlog')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        wp_enqueue_style('blog-style-blog', get_template_directory_uri() . '/assets/css/not_ecommerce/blog.css');
+        wp_enqueue_style('blog-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+        wp_enqueue_style('blog-styles-contactForm', get_template_directory_uri() . '/assets/css/not_ecommerce/contactForm.css');
+
     }elseif (is_page('videos')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        wp_enqueue_style('videos-style-videos', get_template_directory_uri() . '/assets/css/not_ecommerce/videos.css');
+        wp_enqueue_style('videos-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+
     }elseif (is_page('contact-us')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        wp_enqueue_style('contactUs-style-contact', get_template_directory_uri() . '/assets/css/not_ecommerce/contactUs.css');
+        wp_enqueue_style('contactUs-styles-contactForm', get_template_directory_uri() . '/assets/css/not_ecommerce/contactForm.css');
+        wp_enqueue_style('contactUs-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+
     }
     // ----------------------------------------------
     //  Ecommerce Pages
     // ----------------------------------------------
     else if (is_page("shop")){
-        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
+        wp_enqueue_style('shop-styles-homepage', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
+
     } else if (is_page("product-pages")){
         // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
     } else if (is_page("singular-product")){
-        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
-    } else if (is_page("shop")){
         // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
     } else if (is_page("checkout-page")){
         // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
