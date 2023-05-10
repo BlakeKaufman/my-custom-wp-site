@@ -13,6 +13,15 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+
+
+    <link
+      rel="shortcut icon"
+      href="<?= get_template_directory_uri()?>/assets/images/icons/logo.png"
+      type="image/x-icon"
+    />
+
     <?php 
     wp_head(); 
     ?>
@@ -29,7 +38,7 @@
       <div class="navContainerDesktop">
         <a href="./index.html"
           ><div class="logo">
-            <img src="<?= get_template_directory_uri()?>/assets/images/logo.png" alt="" srcset="" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/icons/logo.png" alt="" srcset="" />
             <span>VARCHAS</span>
           </div></a
         >
@@ -39,7 +48,7 @@
               <span><a class="navItem" href="#ourStory">About</a></span>
               <img
                 class="arrow"
-                src="<?= get_template_directory_uri()?>/assets/images/downArrow.svg"
+                src="<?= get_template_directory_uri()?>/assets/images/icons/downArrow.svg"
                 alt=""
                 srcset=""
               />
@@ -57,7 +66,7 @@
               >
               <img
                 class="arrow"
-                src="<?= get_template_directory_uri()?>/assets/images/downArrow.svg"
+                src="<?= get_template_directory_uri()?>/assets/images/icons/downArrow.svg"
                 alt=""
                 srcset=""
               />
@@ -74,7 +83,7 @@
               <span class="navItem">Resorces</span>
               <img
                 class="arrow"
-                src="<?= get_template_directory_uri()?>/assets/images/downArrow.svg"
+                src="<?= get_template_directory_uri()?>/assets/images/icons/downArrow.svg"
                 alt=""
                 srcset=""
               />
@@ -90,7 +99,7 @@
         </ul>
         <div class="shop-container">
           <div class="imageContainer">
-            <img src="<?= get_template_directory_uri()?>/assets/images/shopping-cart.png" alt="" class="cart" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/icons/shopping-cart.png" alt="" class="cart" />
             <div class="item-count"></div>
           </div>
         </div>
@@ -100,17 +109,17 @@
       <div class="navContainerMobile">
         <div class="logo">
           <a href="./index.html"
-            ><img src="<?= get_template_directory_uri()?>/assets/images/logo.png" alt="" srcset=""
+            ><img src="<?= get_template_directory_uri()?>/assets/images/icons/logo.png" alt="" srcset=""
           /></a>
         </div>
         <div class="shop-container">
           <div class="imageContainer">
-            <img src="<?= get_template_directory_uri()?>/assets/images/shopping-cart.png" alt="" class="cart" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/icons/shopping-cart.png" alt="" class="cart" />
             <div class="item-count"></div>
           </div>
           <img
             class="mobileMenuBtn"
-            src="<?= get_template_directory_uri()?>/assets/images/list.svg"
+            src="<?= get_template_directory_uri()?>/assets/images/icons/list.svg"
             alt=""
             srcset=""
           />
@@ -126,7 +135,7 @@
             <span><a class="navItem drop" href="#ourStory">About</a></span>
             <img
               class="arrow"
-              src="<?= get_template_directory_uri()?>/assets/images/plusIcon.svg"
+              src="<?= get_template_directory_uri()?>/assets/images/icons/plusIcon.svg"
               alt=""
               srcset=""
             />
@@ -146,7 +155,7 @@
             >
             <img
               class="arrow"
-              src="<?= get_template_directory_uri()?>/assets/images/plusIcon.svg"
+              src="<?= get_template_directory_uri()?>/assets/images/icons/plusIcon.svg"
               alt=""
               srcset=""
             />
@@ -163,7 +172,7 @@
             <span><a class="navItem drop" href="#">Resorces</a></span>
             <img
               class="arrow"
-              src="<?= get_template_directory_uri()?>/assets/images/plusIcon.svg"
+              src="<?= get_template_directory_uri()?>/assets/images/icons/plusIcon.svg"
               alt=""
               srcset=""
             />

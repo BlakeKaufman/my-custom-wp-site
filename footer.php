@@ -33,7 +33,7 @@
         <div class="center">
           <!-- logo start -->
           <div class="logo">
-            <img src="./assets/images/logo.png" alt="" srcset="" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/icons/logo.png" alt="" srcset="" />
           </div>
           <!-- logo end -->
         </div>
@@ -64,9 +64,9 @@
           >© 2022 Shankar Distillers LLC. – All Rights Reserved</span
         >
         <div class="socials">
-          <img src="./assets/images/facebook.svg" alt="" srcset="" />
-          <img src="./assets/images/twitter.svg" alt="" srcset="" />
-          <img src="./assets/images/linkedin.svg" alt="" srcset="" />
+          <img src="<?= get_template_directory_uri()?>/assets/images/icons/facebook.svg" alt="" srcset="" />
+          <img src="<?= get_template_directory_uri()?>/assets/images/icons/twitter.svg" alt="" srcset="" />
+          <img src="<?= get_template_directory_uri()?>/assets/images/icons/linkedin.svg" alt="" srcset="" />
         </div>
         <span class="policies">Privacy Policy | Terms of Use</span>
       </div>
