@@ -28,11 +28,14 @@
 
   </head>
 
-  <body <?php body_class(); ?>>
+  <body <?php 
+  // body_class(); 
+  ?>
+  >
 
   <header>
 
-  <!-- NavBar Start -->
+   <!-- NavBar Start -->
     <nav class="nav">
       <!-- desktop nav begining -->
       <div class="navContainerDesktop">

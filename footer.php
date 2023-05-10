@@ -76,7 +76,7 @@
 
 
 <?php 
-wp_footer();
+wp_footer(); //calls the js
  ?>
 	</body>
 </html>
