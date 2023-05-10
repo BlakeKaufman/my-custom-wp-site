@@ -39,7 +39,7 @@
     <nav class="nav">
       <!-- desktop nav begining -->
       <div class="navContainerDesktop">
-        <a href="./index.html"
+        <a href="<?= esc_url( get_permalink( get_page_by_title( 'Front page' ) ) );?>"
           ><div class="logo">
             <img src="<?= get_template_directory_uri()?>/assets/images/icons/logo.png" alt="" srcset="" />
             <span>VARCHAS</span>
@@ -57,8 +57,8 @@
               />
             </div>
             <div class="dropdown-content">
-              <a href="./ourstory.html">Our Story</a>
-              <a href="./team.html">Team</a>
+              <a href="<?= esc_url( get_permalink( get_page_by_title( 'Our Story' ) ) );?>">Our Story</a>
+              <a href="<?= esc_url( get_permalink( get_page_by_title( 'Team' ) ) );?>">Team</a>
             </div>
           </li>
           <li><a class="navItem" href="distillery.html">Our Distillary</a></li>
