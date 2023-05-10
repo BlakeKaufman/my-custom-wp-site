@@ -16,7 +16,7 @@
 <section class="home">
       <video
         class="backgroundVideo"
-        src="./assets/videos/production ID_4457027Mobile.mp4"
+        src="<?= get_template_directory_uri()?>/assets/videos/homepageVideo.mp4"
         autoplay
         loop
         muted
@@ -25,7 +25,7 @@
       <div class="blurBackground">
         <img
           class="logoWithText"
-          src="./assets/images/LogoWithText.png"
+          src="<?= get_template_directory_uri()?>/assets/images/icons/LogoWithText.png"
           alt=""
         />
         <span class="captionMain"
@@ -36,7 +36,7 @@
           <span class="nextPageBtn clickable"
             ><img
               class="clickable"
-              src="./assets/images/skinnyDownArrow.svg"
+              src="<?= get_template_directory_uri()?>/assets/images/icons/skinnyDownArrow.svg"
               alt=""
               srcset=""
           /></span>
@@ -54,7 +54,7 @@
           <div class="rightTxtContainer contentContainer">
             <div class="img">
               <img
-                src="./assets/images/indexRyeBottle/Group 194@2x.png"
+                src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/RyeBottleAward.png"
                 alt=""
               />
             </div>
@@ -68,7 +68,7 @@
           <div class="leftTxtContainer contentContainer">
             <div class="img">
               <img
-                src="./assets/images/indexBourbonBottle/Group 193@2x.png"
+                src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/WhiskeyBottleAward.png"
                 alt=""
               />
             </div>
@@ -104,7 +104,7 @@
           >
         </div>
         <div class="imgContainer">
-          <img src="./assets/images/shankarProfilePic.png" alt="" srcset="" />
+          <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/shankarProfilePic.png" alt="" srcset="" />
           <div class="imgBorder"></div>
         </div>
       </div>
@@ -119,9 +119,9 @@
       <div class="recepeMastContainer">
         <!-- first recepie -->
         <div class="recepeContainer">
-          <img class="closePopupBtn" src="./assets/images/xIcon.svg" alt="" />
+          <img class="closePopupBtn" src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/xIcon.svg" alt="" />
           <div class="imgContainer">
-            <img src="./assets/images/volfashioned_new.png" alt="" srcset="" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/volfashioned_new.png" alt="" srcset="" />
           </div>
           <div class="popup">
             <div class="popupContainer">
@@ -150,9 +150,9 @@
         </div>
         <!-- second Recipe -->
         <div class="recepeContainer">
-          <img class="closePopupBtn" src="./assets/images/xIcon.svg" alt="" />
+          <img class="closePopupBtn" src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/xIcon.svg" alt="" />
           <div class="imgContainer">
-            <img src="./assets/images/lemonvader_new.png" alt="" srcset="" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/lemonvader_new.png" alt="" srcset="" />
           </div>
           <div class="popup">
             <div class="popupContainer">
@@ -174,9 +174,9 @@
         </div>
         <!-- thier receipe -->
         <div class="recepeContainer">
-          <img class="closePopupBtn" src="./assets/images/xIcon.svg" alt="" />
+          <img class="closePopupBtn" src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/xIcon.svg" alt="" />
           <div class="imgContainer">
-            <img src="./assets/images/vojito_new.png" alt="" srcset="" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/vojito_new.png" alt="" srcset="" />
           </div>
           <div class="popup">
             <div class="popupContainer">
@@ -242,7 +242,7 @@
         <div class="header">
           <img
             class="backgroundImage"
-            src="./assets/images/BourbonGirl/clucb_bck.png"
+            src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/BourbonGirl/clucb_bck.png"
             alt=""
             srcset=""
           />

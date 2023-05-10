@@ -41,7 +41,7 @@ function varchas_register_scripts(){
 
     // for all pages
     wp_enqueue_script('varchas-slideingNav', get_template_directory_uri() . "/assets/js/ecommerce/add-to-cart.js", array(), "1.0", true); //true places script in footer
-    wp_enqueue_script('varchas-navBar', get_template_directory_uri() . "/assets/js/ecommerce/nav-bar.js", array(), "1.0", true); //true places script in footer
+    wp_enqueue_script('varchas-navBar', get_template_directory_uri() . "/assets/js/combined/nav-bar.js", array(), "1.0", true); //true places script in footer
     wp_enqueue_script('varchas-homepageRecipieDisplay', get_template_directory_uri(), "/assets/js/not_ecommerce/scrollToTopBTN.js", array(), "1.0", true); //
     
 
