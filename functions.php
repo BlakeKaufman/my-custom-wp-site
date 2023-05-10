@@ -97,6 +97,16 @@ add_action('wp_enqueue_scripts', 'varchas_custom_scripts');
 
 
 
+// get_permalink(123); how to link to another page once you have assigned a page id
+//is_page(42) see which page is which to addign differnt syle sheets etc.
+
+
+
+
+
+
+
+
 
 
 
