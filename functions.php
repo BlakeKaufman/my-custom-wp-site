@@ -12,83 +12,83 @@ function varchas_load_custom_styles() {
     // ----------------------------------------------
     if (is_front_page()) {
 
-        wp_enqueue_style('homepageAwards-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/awards.css');
-        wp_enqueue_style('homepageContactForm-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/contactForm.css');
-        wp_enqueue_style('homepageRecipies-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/recipies-homepage.css');
-        wp_enqueue_style('homepageScrollToTopBTN-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
-        wp_enqueue_style('homepage-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/homepage.css');
+        wp_enqueue_style('homepageAwards-styles', get_template_directory_uri() . '/assets/css/not_ecomerce/awards.css');
+        wp_enqueue_style('homepageContactForm-styles', get_template_directory_uri() . '/assets/css/not_ecomerce/contactForm.css');
+        wp_enqueue_style('homepageRecipies-styles', get_template_directory_uri() . '/assets/css/not_ecomerce/recipies-homepage.css');
+        wp_enqueue_style('homepageScrollToTopBTN-styles', get_template_directory_uri() . '/assets/css/not_ecomerce/scrollToTopBTN.css');
+        wp_enqueue_style('homepage-styles', get_template_directory_uri() . '/assets/css/not_ecomerce/homepage.css');
 
     } elseif (is_page('our-story')) {
-        wp_enqueue_style('ourstory-styles-awards', get_template_directory_uri() . '/assets/css/not_ecommerce/awards.css');
-        wp_enqueue_style('ourstory-styles-contactForm', get_template_directory_uri() . '/assets/css/not_ecommerce/contactForm.css');
-        wp_enqueue_style('ourstory-styles-ourstory', get_template_directory_uri() . '/assets/css/not_ecommerce/ourstory.css');
-        wp_enqueue_style('ourstory-styles-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+        wp_enqueue_style('ourstory-styles-awards', get_template_directory_uri() . '/assets/css/not_ecomerce/awards.css');
+        wp_enqueue_style('ourstory-styles-contactForm', get_template_directory_uri() . '/assets/css/not_ecomerce/contactForm.css');
+        wp_enqueue_style('ourstory-styles-ourstory', get_template_directory_uri() . '/assets/css/not_ecomerce/ourstory.css');
+        wp_enqueue_style('ourstory-styles-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecomerce/scrollToTopBTN.css');
 
     } elseif (is_page('team')) {
-        wp_enqueue_style('team-style-team', get_template_directory_uri() . '/assets/css/not_ecommerce/team.css');
-        wp_enqueue_style('team-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+        wp_enqueue_style('team-style-team', get_template_directory_uri() . '/assets/css/not_ecomerce/team.css');
+        wp_enqueue_style('team-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecomerce/scrollToTopBTN.css');
 
     } elseif (is_page('our-distillary')) {
-        wp_enqueue_style('distillary-style-distillary', get_template_directory_uri() . '/assets/css/not_ecommerce/distillery.css');
-        wp_enqueue_style('distillary-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+        wp_enqueue_style('distillary-style-distillary', get_template_directory_uri() . '/assets/css/not_ecomerce/distillery.css');
+        wp_enqueue_style('distillary-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecomerce/scrollToTopBTN.css');
 
     }elseif (is_page('straight-bourbon')) {
-        wp_enqueue_style('straight_bourbon-style', get_template_directory_uri() . '/assets/css/not_ecommerce/rye&bourbon.css');
-        wp_enqueue_style('stright_bourbon-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+        wp_enqueue_style('straight_bourbon-style', get_template_directory_uri() . '/assets/css/not_ecomerce/rye&bourbon.css');
+        wp_enqueue_style('stright_bourbon-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecomerce/scrollToTopBTN.css');
 
     }elseif (is_page('seraight-rye')) {
-        wp_enqueue_style('straight_rye-style', get_template_directory_uri() . '/assets/css/not_ecommerce/rye&bourbon.css');
-        wp_enqueue_style('straight_rye-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+        wp_enqueue_style('straight_rye-style', get_template_directory_uri() . '/assets/css/not_ecomerce/rye&bourbon.css');
+        wp_enqueue_style('straight_rye-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecomerce/scrollToTopBTN.css');
 
     }elseif (is_page('recipies')) {
-        wp_enqueue_style('recipies-style-recipiespage', get_template_directory_uri() . '/assets/css/not_ecommerce/recipies-recipiespage.css');
-        wp_enqueue_style('recipies-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+        wp_enqueue_style('recipies-style-recipiespage', get_template_directory_uri() . '/assets/css/not_ecomerce/recipies-recipiespage.css');
+        wp_enqueue_style('recipies-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecomerce/scrollToTopBTN.css');
 
     }elseif (is_page('where-to-buy')) {
-        wp_enqueue_style('where_to_buy-style-wheretobuy', get_template_directory_uri() . '/assets/css/not_ecommerce/wheretobuy.css');
-        wp_enqueue_style('where_to_buy-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+        wp_enqueue_style('where_to_buy-style-wheretobuy', get_template_directory_uri() . '/assets/css/not_ecomerce/wheretobuy.css');
+        wp_enqueue_style('where_to_buy-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecomerce/scrollToTopBTN.css');
 
     }elseif (is_page('news')) {
-        wp_enqueue_style('news-style-index', get_template_directory_uri() . '/assets/css/not_ecommerce/news&eventsIndex.css');
-        wp_enqueue_style('news-style-news', get_template_directory_uri() . '/assets/css/not_ecommerce/news.css');
-        wp_enqueue_style('news-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+        wp_enqueue_style('news-style-index', get_template_directory_uri() . '/assets/css/not_ecomerce/news&eventsIndex.css');
+        wp_enqueue_style('news-style-news', get_template_directory_uri() . '/assets/css/not_ecomerce/news.css');
+        wp_enqueue_style('news-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecomerce/scrollToTopBTN.css');
 
     }elseif (is_page('events-and-tastings')) {
-        wp_enqueue_style('events-style-index', get_template_directory_uri() . '/assets/css/not_ecommerce/news&eventsIndex.css');
-        wp_enqueue_style('events-style-events', get_template_directory_uri() . '/assets/css/not_ecommerce/events.css');
-        wp_enqueue_style('events-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+        wp_enqueue_style('events-style-index', get_template_directory_uri() . '/assets/css/not_ecomerce/news&eventsIndex.css');
+        wp_enqueue_style('events-style-events', get_template_directory_uri() . '/assets/css/not_ecomerce/events.css');
+        wp_enqueue_style('events-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecomerce/scrollToTopBTN.css');
 
     }elseif (is_page('blog-and-vlog')) {
-        wp_enqueue_style('blog-style-blog', get_template_directory_uri() . '/assets/css/not_ecommerce/blog.css');
-        wp_enqueue_style('blog-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
-        wp_enqueue_style('blog-styles-contactForm', get_template_directory_uri() . '/assets/css/not_ecommerce/contactForm.css');
+        wp_enqueue_style('blog-style-blog', get_template_directory_uri() . '/assets/css/not_ecomerce/blog.css');
+        wp_enqueue_style('blog-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecomerce/scrollToTopBTN.css');
+        wp_enqueue_style('blog-styles-contactForm', get_template_directory_uri() . '/assets/css/not_ecomerce/contactForm.css');
 
     }elseif (is_page('videos')) {
-        wp_enqueue_style('videos-style-videos', get_template_directory_uri() . '/assets/css/not_ecommerce/videos.css');
-        wp_enqueue_style('videos-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+        wp_enqueue_style('videos-style-videos', get_template_directory_uri() . '/assets/css/not_ecomerce/videos.css');
+        wp_enqueue_style('videos-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecomerce/scrollToTopBTN.css');
 
     }elseif (is_page('contact-us')) {
-        wp_enqueue_style('contactUs-style-contact', get_template_directory_uri() . '/assets/css/not_ecommerce/contactUs.css');
-        wp_enqueue_style('contactUs-styles-contactForm', get_template_directory_uri() . '/assets/css/not_ecommerce/contactForm.css');
-        wp_enqueue_style('contactUs-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+        wp_enqueue_style('contactUs-style-contact', get_template_directory_uri() . '/assets/css/not_ecomerce/contactUs.css');
+        wp_enqueue_style('contactUs-styles-contactForm', get_template_directory_uri() . '/assets/css/not_ecomerce/contactForm.css');
+        wp_enqueue_style('contactUs-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecomerce/scrollToTopBTN.css');
 
     }
     // ----------------------------------------------
     //  Ecommerce Pages
     // ----------------------------------------------
     else if (is_page("shop")){
-        wp_enqueue_style('shop-styles-homepage', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
+        wp_enqueue_style('shop-styles-homepage', get_template_directory_uri() . '/assets/css/ecomerce/Homepage.css');
 
     } else if (is_page("product-pages")){
-        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
+        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecomerce/Homepage.css');
     } else if (is_page("singular-product")){
-        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
+        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecomerce/Homepage.css');
     } else if (is_page("checkout-page")){
-        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
+        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecomerce/Homepage.css');
     } else if (is_page("cart-page")){
-        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
+        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecomerce/Homepage.css');
     } else if (is_page("thank-you-page")){
-        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
+        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecomerce/Homepage.css');
     }
 
 
@@ -108,52 +108,52 @@ function varchas_register_scripts(){
     // ----------------------------------------------
     if (is_front_page()) {
         
-        wp_enqueue_script('varchas-homepageRecipieDisplay', get_template_directory_uri(), "/assets/js/not_ecommerce/recipeDisplay.js", array(), "1.0", true); 
-        wp_enqueue_script('varchas-homepage', get_template_directory_uri(), "/assets/js/not_ecommerce/homepage.js", array(), "1.0", true);
-        wp_enqueue_script('varchas-homepageAwardsMovement', get_template_directory_uri(), "/assets/js/not_ecommerce/awardsMovement.js", array(), "1.0", true);  
+        wp_enqueue_script('varchas-homepageRecipieDisplay', get_template_directory_uri() . "/assets/js/not_ecomerce/recipeDisplay.js", array(), "1.0", true); 
+        wp_enqueue_script('varchas-homepage', get_template_directory_uri() .  "/assets/js/not_ecomerce/homepage.js", array(), "1.0", true);
+        wp_enqueue_script('varchas-homepageAwardsMovement', get_template_directory_uri()  . "/assets/js/not_ecomerce/awardsMovement.js", array(), "1.0", true);  
        
     } elseif (is_page('our-story')) {
-        // wp_enqueue_style('services-styles', get_template_directory_uri() . 'assets/css/ecommerce/services-styles.css');
+        // wp_enqueue_style('services-styles', get_template_directory_uri() . 'assets/css/ecomerce/services-styles.css');
     } elseif (is_page('team')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     } elseif (is_page('our-distillary')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('straight-bourbon')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('seraight-rye')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('recipies')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('where-to-buy')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('news')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('events-and-tastings')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('blog-and-vlog')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('videos')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('contact-us')) {
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }
     // ----------------------------------------------
     //  Ecommerce Pages
     // ----------------------------------------------
     else if (is_page("shop")){
-        wp_enqueue_script('varchas-hompage_mobileNav', get_template_directory_uri(), "/assets/js/ecommerce/mobbileHeader.js", array(), "1.0", true); //true places script in footer
+        wp_enqueue_script('varchas-hompage_mobileNav', get_template_directory_uri() . "/assets/js/ecomerce/mobbileHeader.js", array(), "1.0", true); //true places script in footer
     }else if (is_page("product-pages")){
-        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
+        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecomerce/Homepage.css');
     } else if (is_page("singular-product")){
-        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
+        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecomerce/Homepage.css');
     } else if (is_page("shop")){
-        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
+        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecomerce/Homepage.css');
     } else if (is_page("checkout-page")){
-        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
+        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecomerce/Homepage.css');
     } else if (is_page("cart-page")){
-        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
+        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecomerce/Homepage.css');
     } else if (is_page("thank-you-page")){
-        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecommerce/Homepage.css');
+        // wp_enqueue_style('e_commerceHomepage-styles', get_template_directory_uri() . '/assets/css/ecomerce/Homepage.css');
     }
 
     // ----------------------------------------------
@@ -179,7 +179,7 @@ function varchas_register_scripts(){
     wp_localize_script('varchas-navBar', 'down_icon_img', $down_arrow_icon);
     wp_localize_script('varchas-navBar', 'plus_icon_img', $plus_icon );
 
-    wp_enqueue_script('varchas-homepageRecipieDisplay', get_template_directory_uri(), "/assets/js/not_ecommerce/scrollToTopBTN.js", array(), "1.0", true); //
+    wp_enqueue_script('varchas-scrollToTopBTN-js', get_template_directory_uri() . "/assets/js/not_ecomerce/scrollToTopBTN.js", array(), "1.0", true); //
    
 
 } // calls when  wp_head() is called
