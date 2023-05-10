@@ -24,9 +24,9 @@ add_action('wp_enqueue_scripts', 'varchas_load_custom_styles');
 
 function varchas_register_scripts(){
     if (is_front_page()) {
-        wp_enqueue_script('varchas-homepageRecipieDisplay', get_template_directory_uri(), "/assets/js/not_ecommerce/recipeDisplay.js", array(), "1.0", true); 
-        wp_enqueue_script('varchas-homepageRecipieDisplay', get_template_directory_uri(), "/assets/js/not_ecommerce/homepage.js", array(), "1.0", true);
-        wp_enqueue_script('varchas-homepageRecipieDisplay', get_template_directory_uri(), "/assets/js/not_ecommerce/awardsMovement.js", array(), "1.0", true);  
+        wp_enqueue_script('varchas-homepageRecipieDisplay-js', get_template_directory_uri(), "/assets/js/not_ecommerce/recipeDisplay.js", array(), "1.0", true); 
+        wp_enqueue_script('varchas-homepage-js', get_template_directory_uri(), "/assets/js/not_ecommerce/homepage.js", array(), "1.0", true);
+        wp_enqueue_script('varchas-homepageAwardsMovement-js', get_template_directory_uri(), "/assets/js/not_ecommerce/awardsMovement.js", array(), "1.0", true);  
        
     } elseif (is_page('services')) {
         // wp_enqueue_style('services-styles', get_template_directory_uri() . '/css/services-styles.css');
