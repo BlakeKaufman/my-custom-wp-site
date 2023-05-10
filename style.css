@@ -36,20 +36,18 @@ Tags: custom-background
 
 html {
   margin: 0 !important;
+  overflow-x: hidden;
 }
 
 body {
   width: 100vw;
   overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
   display: none;
-}
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 /* custom scrollbar */
@@ -69,6 +67,7 @@ body {
   border-radius: 10px;
   position: absolute;
 }
+
 main {
   width: 100%;
   height: fit-content;
@@ -643,30 +642,191 @@ header {
 /* --------------------------------- */
 /* FOOTER */
 /* --------------------------------- */
+/* Footer start */
+
 footer {
   width: 100vw;
   height: fit-content;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 200px;
+  padding: 20px 3vw 20px 3vw;
+
   background-color: black;
-  color: white;
+
+  color: rgb(187, 187, 187);
+
+  font-size: min(18px, 4vw);
 }
-.footer_container {
-  height: 50px;
-  width: 97%;
+.mainFootContainer {
+  width: 100%;
+  max-width: 1500px;
+  height: 100%;
+
+  margin: 0 auto;
 
   display: flex;
   align-items: center;
-  margin: 0 auto;
-  font-size: 12px;
+  justify-content: space-between;
+
+  border-bottom: 1px solid gold;
 }
-.footer_nav {
+/* left side start */
+footer .left {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+}
+footer .left .logo {
+  width: 60px;
+  height: auto;
+  margin-bottom: min(10px, 3vh);
+}
+footer .left .logo img {
+  width: 100%;
+}
+footer .left .ownedOperated {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+footer .left .ownedOperated span {
+  line-height: 40px;
+}
+
+footer .left .contact {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+footer .left .contact .container:first-child {
+  width: 50%;
+}
+footer .left .contact .container {
+  display: flex;
+  flex-direction: column;
+}
+/* left side end */
+/* center start */
+
+/* center end */
+/* right start */
+footer .right {
+  width: 290px;
+
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+footer .navContainerFooter {
   list-style: none;
-  margin: 0 auto 0 auto;
+  text-align: left;
 }
-.footer_nav li {
-  margin: 0 8px;
+footer .NavGroupFooter:first-child {
+  margin-right: 50px;
 }
+footer .navItemFooter {
+  margin: 10px 0;
+}
+/* right end  */
+/* bottom start */
+footer .bottom {
+  width: 100%;
+  max-width: 1500px;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin: 20px auto 0;
+}
+footer .rights {
+  width: 400px;
+}
+footer .socials img {
+  width: 22px;
+  margin: 0 5px;
+  transform: scale(1);
+  transition: ease-out 0.2s;
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%);
+}
+footer .socials img:hover {
+  transform: scale(1.5);
+
+  cursor: pointer;
+}
+footer .bottom .policies {
+  width: 290px;
+  text-align: right;
+}
+/* bottom end */
+/* globals */
+
+footer .header {
+  font-weight: bold;
+  color: white;
+  line-height: 40px;
+}
+@media screen and (max-width: 950px) {
+  footer {
+    height: fit-content;
+    padding: 40px 25px 40px;
+  }
+  .mainFootContainer {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  footer .left {
+    align-items: center;
+    max-width: unset;
+  }
+
+  footer .left .ownedOperated {
+    text-align: center;
+    align-items: center;
+    max-width: unset;
+    text-align: center;
+  }
+  footer .left .contact {
+    justify-content: space-between;
+  }
+
+  footer .center {
+    width: max-content;
+    max-width: unset;
+
+    margin-bottom: 20px;
+
+    margin: 0 auto;
+  }
+
+  .socials {
+    margin: 30px 0;
+  }
+
+  footer .rights {
+    width: unset;
+    text-align: center;
+  }
+  footer .bottom .policies {
+    width: unset;
+  }
+
+  footer .bottom {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+/* footer end */
+/* ////////////////////////////// */

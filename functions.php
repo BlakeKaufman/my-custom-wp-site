@@ -3,10 +3,10 @@
 function varchas_load_custom_styles() {
     if (is_front_page()) {
         wp_enqueue_style('homepageAwards-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/awards.css');
-        wp_enqueue_style('homepageAwards-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/contactForm.css');
-        wp_enqueue_style('homepageAwards-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/recipies-homepage.css');
-        wp_enqueue_style('homepageAwards-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
-        wp_enqueue_style('homepageAwards-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/homepage.css');
+        wp_enqueue_style('homepageContactForm-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/contactForm.css');
+        wp_enqueue_style('homepageRecipies-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/recipies-homepage.css');
+        wp_enqueue_style('homepageScrollToTopBTN-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css');
+        wp_enqueue_style('homepage-styles', get_template_directory_uri() . '/assets/css/not_ecommerce/homepage.css');
     } elseif (is_page('services')) {
         // wp_enqueue_style('services-styles', get_template_directory_uri() . 'assets/css/ecommerce/services-styles.css');
     } elseif (is_page('contact')) {
@@ -40,7 +40,7 @@ function varchas_register_scripts(){
 
 
     // for all pages
-    wp_enqueue_script('varchas-slideingNav', get_template_directory_uri() . "/assets/js/ecommerce/add-to-cart.js", array(), "1.0", true); //true places script in footer
+    wp_enqueue_script('varchas-slideingNav', get_template_directory_uri() . "/assets/js/combined/add-to-cart.js", array(), "1.0", true); //true places script in footer
     wp_enqueue_script('varchas-navBar', get_template_directory_uri() . "/assets/js/combined/nav-bar.js", array(), "1.0", true); //true places script in footer
     wp_enqueue_script('varchas-homepageRecipieDisplay', get_template_directory_uri(), "/assets/js/not_ecommerce/scrollToTopBTN.js", array(), "1.0", true); //
     
@@ -53,6 +53,19 @@ function varchas_register_scripts(){
 } // calls when  wp_head() is called
 
 add_action('wp_enqueue_scripts', "varchas_register_scripts" );
+
+
+
+
+// pushing img links to js
+function varchas_custom_scripts() {
+
+    wp_enqueue_script('add-to-cart', get_template_directory_uri() . '/assets/js/combined/add-to-cart.js', '1.0', true);
+
+    $image_url = get_template_directory_uri() . '/assets/images/icons/x-lg.svg';
+    wp_localize_script('add-to-cart', 'x_icon', $image_url);
+}
+add_action('wp_enqueue_scripts', 'varchas_custom_scripts');
 
 
 
