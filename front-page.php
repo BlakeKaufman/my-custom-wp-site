@@ -119,9 +119,9 @@
       <div class="recepeMastContainer">
         <!-- first recepie -->
         <div class="recepeContainer">
-          <img class="closePopupBtn" src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/xIcon.svg" alt="" />
+          <img class="closePopupBtn" src="<?= get_template_directory_uri()?>/assets/images/icons/xIcon.svg" alt="" />
           <div class="imgContainer">
-            <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/volfashioned_new.png" alt="" srcset="" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/volfashioned.webp" alt="" srcset="" />
           </div>
           <div class="popup">
             <div class="popupContainer">
@@ -150,9 +150,9 @@
         </div>
         <!-- second Recipe -->
         <div class="recepeContainer">
-          <img class="closePopupBtn" src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/xIcon.svg" alt="" />
+          <img class="closePopupBtn" src="<?= get_template_directory_uri()?>/assets/images/icons/xIcon.svg" alt="" />
           <div class="imgContainer">
-            <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/lemonvader_new.png" alt="" srcset="" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/lemonvader.webp" alt="" srcset="" />
           </div>
           <div class="popup">
             <div class="popupContainer">
@@ -174,9 +174,9 @@
         </div>
         <!-- thier receipe -->
         <div class="recepeContainer">
-          <img class="closePopupBtn" src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/xIcon.svg" alt="" />
+          <img class="closePopupBtn" src="<?= get_template_directory_uri()?>/assets/images/icons/xIcon.svg" alt="" />
           <div class="imgContainer">
-            <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/vojito_new.png" alt="" srcset="" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/vojito.webp" alt="" srcset="" />
           </div>
           <div class="popup">
             <div class="popupContainer">
