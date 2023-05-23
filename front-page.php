@@ -100,7 +100,7 @@
             experience American heritage.</span
           >
           <span class="readMoreBtn"
-            ><a href="./ourstory.html">Read More >></a></span
+            ><a href="<?= esc_url( get_permalink( get_page_by_title( 'Our Story' ) ) );?>">Read More >></a></span
           >
         </div>
         <div class="imgContainer">
@@ -227,7 +227,7 @@
         </div>
         <div class="buttons">
           <span class="bookTourBtn"
-            ><a href="./contactUs.html">Book Distillery Tour</a></span
+            ><a href="<?= esc_url( get_permalink( get_page_by_title( 'Contact Us' ) ) );?>">Book Distillery Tour</a></span
           >
         </div>
       </div>
@@ -242,7 +242,7 @@
         <div class="header">
           <img
             class="backgroundImage"
-            src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/BourbonGirl/clucb_bck.png"
+            src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/clucb_bck.png"
             alt=""
             srcset=""
           />
