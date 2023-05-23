@@ -119,22 +119,35 @@ function varchas_register_scripts(){
     } elseif (is_page('our-distillary')) {
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('straight-bourbon')) {
+        wp_enqueue_script('varchas-bourbonWhiskeySlideshow', get_template_directory_uri()  . "/assets/js/not_ecomerce/slideshow.js", array(), "1.0", true);  
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('seraight-rye')) {
+        wp_enqueue_script('varchas-ryeWhiskeySlideshow', get_template_directory_uri()  . "/assets/js/not_ecomerce/slideshow.js", array(), "1.0", true);  
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('recipies')) {
+        wp_enqueue_script('varchas-recipiesDisplay', get_template_directory_uri()  . "/assets/js/not_ecomerce/recipieDisplay.js", array(), "1.0", true); 
+        wp_enqueue_script('varchas-recipiesindex', get_template_directory_uri()  . "/assets/js/not_ecomerce/recipies.js", array(), "1.0", true);   
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('where-to-buy')) {
+        wp_enqueue_script('varchas-whereToBuyPopdown', get_template_directory_uri()  . "/assets/js/not_ecomerce/DropdownPopdown.js", array(), "1.0", true); 
+        wp_enqueue_script('varchas-whereToBuyIndex', get_template_directory_uri()  . "/assets/js/not_ecomerce/wheretobuy.js", array(), "1.0", true); 
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('news')) {
+        wp_enqueue_script('varchas-news', get_template_directory_uri()  . "/assets/js/not_ecomerce/news&events.js", array(), "1.0", true); 
+        wp_enqueue_script('varchas-newsPagination', get_template_directory_uri()  . "/assets/js/not_ecomerce/eventsPagination.js", array(), "1.0", true); 
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('events-and-tastings')) {
+        wp_enqueue_script('varchas-news', get_template_directory_uri()  . "/assets/js/not_ecomerce/news&events.js", array(), "1.0", true); 
+        wp_enqueue_script('varchas-newsPagination', get_template_directory_uri()  . "/assets/js/not_ecomerce/eventsPagination.js", array(), "1.0", true); 
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('blog-and-vlog')) {
+        wp_enqueue_script('varchas-blogIndex', get_template_directory_uri()  . "/assets/js/not_ecomerce/blog.js", array(), "1.0", true); 
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('videos')) {
+        wp_enqueue_script('varchas-videosIndex', get_template_directory_uri()  . "/assets/js/not_ecomerce/videos.js", array(), "1.0", true); 
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }elseif (is_page('contact-us')) {
+        wp_enqueue_script('varchas-contactDropdown', get_template_directory_uri()  . "/assets/js/not_ecomerce/DropdownPopdown.js", array(), "1.0", true); 
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecomerce/contact-styles.css');
     }
     // ----------------------------------------------
@@ -178,6 +191,10 @@ function varchas_register_scripts(){
     wp_localize_script('varchas-navBar', 'up_icon_img', $up_arrow_icon );
     wp_localize_script('varchas-navBar', 'down_icon_img', $down_arrow_icon);
     wp_localize_script('varchas-navBar', 'plus_icon_img', $plus_icon );
+
+    // ----------------------------------------------
+    // scroll to top button
+    // ----------------------------------------------
 
     wp_enqueue_script('varchas-scrollToTopBTN-js', get_template_directory_uri() . "/assets/js/not_ecomerce/scrollToTopBTN.js", array(), "1.0", true); //
    

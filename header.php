@@ -61,7 +61,7 @@
               <a href="<?= esc_url( get_permalink( get_page_by_title( 'Team' ) ) );?>">Team</a>
             </div>
           </li>
-          <li><a class="navItem" href="distillery.html">Our Distillary</a></li>
+          <li><a class="navItem" href="<?= esc_url( get_permalink( get_page_by_title( 'Our Distillary' ) ) );?>">Our Distillary</a></li>
           <li class="dropdownItem">
             <div class="dropdownBtn">
               <span
