@@ -39,7 +39,7 @@
     <nav class="nav">
       <!-- desktop nav begining -->
       <div class="navContainerDesktop">
-        <a href="<?= esc_url( get_permalink( get_page_by_title( 'Front page' ) ) );?>"
+        <a href="<?= get_home_url(); ?>"
           ><div class="logo">
             <img src="<?= get_template_directory_uri()?>/assets/images/icons/logo.png" alt="" srcset="" />
             <span>VARCHAS</span>
@@ -61,7 +61,7 @@
               <a href="<?= esc_url( get_permalink( get_page_by_title( 'Team' ) ) );?>">Team</a>
             </div>
           </li>
-          <li><a class="navItem" href="<?= esc_url( get_permalink( get_page_by_title( 'Our Distillary' ) ) );?>">Our Distillary</a></li>
+          <li><a class="navItem" href="<?= esc_url( get_permalink( get_page_by_title( 'Our Distillery' ) ) );?>">Our Distillary</a></li>
           <li class="dropdownItem">
             <div class="dropdownBtn">
               <span
@@ -75,7 +75,7 @@
               />
             </div>
             <div class="dropdown-content">
-              <a href="./bourbonWhiskey.html">Straight Bourbon</a>
+              <a href="<?= esc_url( get_permalink( get_page_by_title( 'Straight Bourbon' ) ) );?>">Straight Bourbon</a>
               <a href="./ryeWhiskey.html">Straight Rye</a>
               <a href="./recipies.html">Recipes</a>
               <a href="./wheretobuy.html">Where To Buy</a>

@@ -28,7 +28,7 @@ function varchas_load_custom_styles() {
         wp_enqueue_style('team-style-team', get_template_directory_uri() . '/assets/css/not_ecommerce/team.css',array(), "1.0", 'all');
         wp_enqueue_style('team-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css',array(), "1.0", 'all');
 
-    } elseif (is_page('our-distillary')) {
+    } elseif (is_page('our-distillery')) {
         wp_enqueue_style('distillary-style-distillary', get_template_directory_uri() . '/assets/css/not_ecommerce/distillery.css',array(), "1.0", 'all');
         wp_enqueue_style('distillary-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css',array(), "1.0", 'all');
 

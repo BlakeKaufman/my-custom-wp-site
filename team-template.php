@@ -39,7 +39,7 @@ Template Name: Team
         <!-- member 2 -->
         <div class="member">
           <div class="img">
-            <img src="./assets/images/not_ecommerce/ScottTeamImg.png" alt="" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/ScottTeamImg.png" alt="" />
           </div>
           <span class="name">SCOTT BLAINE</span>
           <span class="position">VP OPERATIONS</span>
@@ -47,7 +47,7 @@ Template Name: Team
         <!-- member 3 -->
         <div class="member">
           <div class="img">
-            <img src="./assets/images/not_ecommerce/RayTeamImg.png" alt="" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/RayTeamImg.png" alt="" />
           </div>
           <span class="name">RAY DRZALA</span>
           <span class="position">MARKETING DIRECTOR</span>
@@ -55,7 +55,7 @@ Template Name: Team
         <!-- member 4 -->
         <div class="member">
           <div class="img">
-            <img src="./assets/images/not_ecommerce/MikeTeamImg.png" alt="" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/MikeTeamImg.png" alt="" />
           </div>
           <span class="name">MIKE MORRIS</span>
           <span class="position">CREATIVE DIRECTOR</span>
@@ -63,7 +63,7 @@ Template Name: Team
         <!-- member 5 -->
         <div class="member">
           <div class="img">
-            <img src="./assets/images/not_ecommerce/MarkTeamImg.png" alt="" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/MarkTeamImg.png" alt="" />
           </div>
           <span class="name">MARK MENARD</span>
           <span class="position">ADVISOR</span>
@@ -71,7 +71,7 @@ Template Name: Team
         <!-- member 6 -->
         <div class="member">
           <div class="img">
-            <img src="./assets/images/not_ecommerce/BlakeTeamImg.png" alt="" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/BlakeTeamImg.png" alt="" />
           </div>
           <span class="name">BLAKE MURRAY</span>
           <span class="position">SALES</span>

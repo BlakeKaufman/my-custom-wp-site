@@ -28,14 +28,14 @@ Template Name: Rye Whiksey
               <div class="bourbonImage">
                 <div class="backgroundCircle"></div>
                 <img
-                  src="./assets/images/indexBourbonBottle/Group 193@2x.png"
+                  src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/ryeBottleAward.png"
                   alt=""
                   srcset=""
                 />
               </div>
               <div class="buttons">
                 <span class="Bourbonbutton">Buy Online</span>
-                <a class="Bourbonbutton" href="./wheretobuy.html"
+                <a class="Bourbonbutton" href="<?= esc_url( get_permalink( get_page_by_title( 'Where to buy' ) ) );?>"
                   >Where To Buy</a
                 >
               </div>
@@ -85,7 +85,7 @@ Template Name: Rye Whiksey
                   You may also like: Straight Rye Whiskey</a
                 >
                 <img
-                  src="./assets/images/skinnyDownArrow.svg"
+                  src="<?= get_template_directory_uri()?>/assets/images/icons/skinnyDownArrow.svg"
                   alt=""
                   srcset=""
                 />
@@ -94,7 +94,7 @@ Template Name: Rye Whiksey
           </div>
           <div class="buttonsOutsie">
             <span class="Bourbonbutton">Buy Online</span>
-            <a class="Bourbonbutton" href="./wheretobuy.html">Where To Buy</a>
+            <a class="Bourbonbutton" href="<?= esc_url( get_permalink( get_page_by_title( 'Where to buy' ) ) );?>">Where To Buy</a>
           </div>
         </div>
         <!-- bourbon container end -->
@@ -103,7 +103,7 @@ Template Name: Rye Whiksey
           <div class="container">
             <div class="awards">
               <img
-                src="./assets/images/SilverMedalAward/Group 198.png"
+                src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/SilverMedalAward.png"
                 alt=""
               />
             </div>
@@ -126,7 +126,7 @@ Template Name: Rye Whiksey
               <div class="slideshow">
                 <div class="left">
                   <img
-                    src="./assets/images/PersonForTextimonial/Group 165.png"
+                    src="<?= get_template_directory_uri()?>/assets/images/PersonForTextimonial.png"
                     alt=""
                   />
                 </div>
