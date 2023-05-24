@@ -21,7 +21,7 @@ Template Name: Our Story
     <!-- main test start -->
     <div class="banner">
       <img
-        src="./assets/images/Top Banner/Top Banner.png"
+        src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/ourStoryBanner.png"
         alt=""
         class="backgroundImage"
       />
@@ -58,7 +58,7 @@ Template Name: Our Story
         </span>
 
         <div class="image">
-          <img src="./assets/images/OurStoryShankarPicture.png" alt="" />
+          <img src="<?= get_template_directory_uri()?>/assets/images/OurStoryShankarPicture.png" alt="" />
         </div>
       </div>
     </section>
@@ -73,7 +73,7 @@ Template Name: Our Story
           <div class="rightTxtContainer contentContainer">
             <div class="img">
               <img
-                src="./assets/images/indexRyeBottle/Group 194@2x.png"
+                src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/WhiskeyBottleAward.png"
                 alt=""
               />
             </div>
@@ -87,7 +87,7 @@ Template Name: Our Story
           <div class="leftTxtContainer contentContainer">
             <div class="img">
               <img
-                src="./assets/images/indexBourbonBottle/Group 193@2x.png"
+                src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/ryeBottleAward.png"
                 alt=""
               />
             </div>
@@ -115,7 +115,7 @@ Template Name: Our Story
         <div class="header">
           <img
             class="backgroundImage"
-            src="./assets/images/BourbonGirl/clucb_bck.png"
+            src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/clucb_bck.png"
             alt=""
             srcset=""
           />
