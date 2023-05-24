@@ -76,9 +76,9 @@
             </div>
             <div class="dropdown-content">
               <a href="<?= esc_url( get_permalink( get_page_by_title( 'Straight Bourbon' ) ) );?>">Straight Bourbon</a>
-              <a href="./ryeWhiskey.html">Straight Rye</a>
-              <a href="./recipies.html">Recipes</a>
-              <a href="./wheretobuy.html">Where To Buy</a>
+              <a href="<?= esc_url( get_permalink( get_page_by_title( 'Straight Rye' ) ) );?>">Straight Rye</a>
+              <a href="<?= esc_url( get_permalink( get_page_by_title( 'Recipies' ) ) );?>">Recipes</a>
+              <a href="<?= esc_url( get_permalink( get_page_by_title( 'Where to buy' ) ) );?>">Where To Buy</a>
             </div>
           </li>
           <li class="dropdownItem">
@@ -92,13 +92,13 @@
               />
             </div>
             <div class="dropdown-content">
-              <a href="./news.html">News</a>
-              <a href="./events.html">Events & Tastings</a>
-              <a href="./blog.html">Blog & Vlog</a>
-              <a href="./videos.html">Videos</a>
+              <a href="<?= esc_url( get_permalink( get_page_by_title( 'News' ) ) );?>">News</a>
+              <a href="<?= esc_url( get_permalink( get_page_by_title( 'Events' ) ) );?>">Events & Tastings</a>
+              <a href="<?= esc_url( get_permalink( get_page_by_title( 'Blog and Vlog' ) ) );?>">Blog & Vlog</a>
+              <a href="<?= esc_url( get_permalink( get_page_by_title( 'Videos' ) ) );?>">Videos</a>
             </div>
           </li>
-          <li><a class="navItem" href="./contactUs.html">Contact Us</a></li>
+          <li><a class="navItem" href="<?= esc_url( get_permalink( get_page_by_title( 'Contact Us' ) ) );?>">Contact Us</a></li>
         </ul>
         <div class="shop-container">
           <div class="imageContainer">
