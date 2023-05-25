@@ -366,6 +366,8 @@ RecipieOptions.forEach((option) => {
   });
 });
 
+console.log(template_directory);
+
 // //////////////////////////////////////////////////////
 // popup animation
 
