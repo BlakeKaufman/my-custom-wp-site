@@ -281,9 +281,9 @@ function changeContent(option) {
     });
     let html = `
         <div class="recepeContainer">
-          <img class="closePopupBtn" src="./assets/images/xIcon.svg" alt="" />
+          <img class="closePopupBtn" src="${template_directory}/assets/images/icons/xIcon.svg" alt="" />
           <div class="imgContainer">
-            <img src="./assets/images/${recipe.img}" alt="" srcset="" />
+            <img src="${template_directory}/assets/images/not_ecommerce/${recipe.img}" alt="" srcset="" />
           </div>
           <div class="popup">
             <div class="popupContainer">
@@ -302,7 +302,7 @@ function changeContent(option) {
     html = `
         <div class="recepeContainer">
           <div class="imgContainer">
-            <img src="./assets/images/${recipe.img}" alt="" srcset="" />
+            <img src="${template_directory}/assets/images/not_ecommerce/${recipe.img}" alt="" srcset="" />
           </div>
           <span class="title">${recipe.title}</span>
           <a href='recipiesMTKLandingPage.html?${recipe.title}'class="recepieBtn">View Recipe</a>
@@ -383,7 +383,7 @@ ryeContent.forEach((content) => {
 function preload() {
   for (var i = 0; i < images.length; i++) {
     const n_image = new Image();
-    n_image.src = `./assets/images/${images[i]}`;
+    n_image.src = `${template_directory}/assets/images/not_ecommerce/${images[i]}`;
   }
 }
 preload();
