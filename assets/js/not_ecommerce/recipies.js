@@ -4,6 +4,8 @@
 const RecipieOptions = document.querySelectorAll(".optionContainer");
 const options = document.querySelectorAll(".optionContainer");
 
+console.log(template_directory);
+
 // changing content variables
 const bourbonContent = [
   {
@@ -365,8 +367,6 @@ RecipieOptions.forEach((option) => {
     }, 750);
   });
 });
-
-console.log(template_directory);
 
 // //////////////////////////////////////////////////////
 // popup animation
