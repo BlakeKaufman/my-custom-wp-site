@@ -9,7 +9,7 @@ Template Name: Recipies
 
 <!-- togle display -->
 <div class="banner">
-      <img src="./assets/images/RecipiesBanner/Top Banner.png" alt="" />
+      <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/recipiesBanner.png" alt="" />
       <!-- <span>Recipies</span> -->
     </div>
     <div class="toggle">

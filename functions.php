@@ -36,7 +36,7 @@ function varchas_load_custom_styles() {
         wp_enqueue_style('straight_bourbon-style', get_template_directory_uri() . '/assets/css/not_ecommerce/rye&bourbon.css',array(), "1.0", 'all');
         wp_enqueue_style('stright_bourbon-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css',array(), "1.0", 'all');
 
-    }elseif (is_page('seraight-rye')) {
+    }elseif (is_page('straight-rye')) {
         wp_enqueue_style('straight_rye-style', get_template_directory_uri() . '/assets/css/not_ecommerce/rye&bourbon.css',array(), "1.0", 'all');
         wp_enqueue_style('straight_rye-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css',array(), "1.0", 'all');
 
@@ -127,6 +127,12 @@ function varchas_register_scripts(){
     }elseif (is_page('recipies')) {
         wp_enqueue_script('varchas-recipiesDisplay', get_template_directory_uri()  . "/assets/js/not_ecommerce/recipieDisplay.js", array(), "1.0", true); 
         wp_enqueue_script('varchas-recipiesindex', get_template_directory_uri()  . "/assets/js/not_ecommerce/recipies.js", array(), "1.0", true);   
+
+
+
+        $tempate_directory = get_template_directory_uri();
+        wp_localize_script("varchas-recipiesindex", "template_directory", $tempate_directory);
+
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
     }elseif (is_page('where-to-buy')) {
         wp_enqueue_script('varchas-whereToBuyPopdown', get_template_directory_uri()  . "/assets/js/not_ecommerce/DropdownPopdown.js", array(), "1.0", true); 

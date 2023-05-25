@@ -58,7 +58,7 @@ Template Name: Our Story
         </span>
 
         <div class="image">
-          <img src="<?= get_template_directory_uri()?>/assets/images/OurStoryShankarPicture.png" alt="" />
+          <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/OurStoryShankarPicture.png" alt="" />
         </div>
       </div>
     </section>
