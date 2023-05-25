@@ -155,7 +155,7 @@ const ryeContent = [
       "1.5 ounces of Varchas Rye in a rocks glass",
       "With or without ice, your choice",
     ],
-    img: "Neat-Rocks.png",
+    img: "neat_rocks.webp",
     drinkType: "rye",
   },
   {
@@ -167,7 +167,7 @@ const ryeContent = [
       "Cherry garnish",
       "Combine Rye, sour mix and soda with ice in shaker, shake and pour in rocks glass, garnish with cherry.",
     ],
-    img: "Whiskey_sour.png",
+    img: "whiskey_sour.webp",
     drinkType: "rye",
   },
   {
@@ -179,7 +179,7 @@ const ryeContent = [
       "Cherry garnish",
       "Fill rocks glass with ice, pour in Varchas Rye, fill with Ginger Ale, stir gently, garnish with lemon twist.",
     ],
-    img: "v-and-g.png",
+    img: "v_n_g.webp",
     drinkType: "rye",
   },
   {
@@ -305,7 +305,7 @@ function changeContent(option) {
             <img src="${template_directory}/assets/images/not_ecommerce/${recipe.img}" alt="" srcset="" />
           </div>
           <span class="title">${recipe.title}</span>
-          <a href='recipiesMTKLandingPage.html?${recipe.title}'class="recepieBtn">View Recipe</a>
+          <a href='${full_recipie_link}?${recipe.title}'class="recepieBtn">View Recipe</a>
           </div>
         </div>
       `;

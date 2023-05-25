@@ -55,7 +55,7 @@ function loadDrink(post) {
 
       <div class="container">
         <div class="img">
-          <img src="./assets/images/${drinkDic.img}" alt="" />
+          <img src="${template_directory}/assets/images/not_ecommerce/${drinkDic.img}" alt="" />
         </div>
         <div class="content">
           <div class="topInformation">
@@ -79,7 +79,7 @@ function loadDrink(post) {
 
           <span class="next_recipie_BTN"
             >View next recipe
-            <img src="./assets/images/arrow-right-short.svg" alt="" srcset=""
+            <img src="${template_directory}/assets/images/icons/arrow-right-short.svg" alt="" srcset=""
           /></span>
         </div>
       </div>`;
@@ -94,15 +94,21 @@ viewAllRecBTN.addEventListener("click", function (e) {
   if (buttonTarget()) {
     // console.log("bourbon");
     // live server
-    window.open("http://127.0.0.1:5500/recipies.html", "_self");
+    // window.open("http://127.0.0.1:5500/recipies.html", "_self");
     // real
     // window.open("https://mibourbontest.netlify.app/recipies.html", "_self");
+
+    // wp
+    window.open(`${template_directory}/recipies-template.php`);
   } else {
     // console.log("rye");
     // live server
-    window.open("http://127.0.0.1:5500/recipies.html", "_self");
+    // window.open("http://127.0.0.1:5500/recipies.html", "_self");
     // real
     // window.open("https://mibourbontest.netlify.app/recipies.html", "_self");
+
+    // wp
+    window.open(`${template_directory}/recipies-template.php`);
   }
 });
 
