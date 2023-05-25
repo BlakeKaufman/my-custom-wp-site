@@ -125,15 +125,28 @@ function varchas_register_scripts(){
         wp_enqueue_script('varchas-ryeWhiskeySlideshow', get_template_directory_uri()  . "/assets/js/not_ecommerce/slideshow.js", array(), "1.0", true);  
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
     }elseif (is_page('recipies')) {
-        wp_enqueue_script('varchas-recipiesDisplay', get_template_directory_uri()  . "/assets/js/not_ecommerce/recipieDisplay.js", array(), "1.0", true); 
+        wp_enqueue_script('varchas-recipiesDisplay', get_template_directory_uri()  . "/assets/js/not_ecommerce/reipeDisplay.js", array(), "1.0", true); 
         wp_enqueue_script('varchas-recipiesindex', get_template_directory_uri()  . "/assets/js/not_ecommerce/recipies.js", array(), "1.0", true);   
 
 
 
         $tempate_directory = get_template_directory_uri();
+        $full_page_recipie = esc_url( get_permalink( get_page_by_title( 'Full Recipies Page' ) ) );
         wp_localize_script("varchas-recipiesindex", "template_directory", $tempate_directory);
+        wp_localize_script("varchas-recipiesindex", "full_recipie_link", $full_page_recipie);
 
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+    }elseif is_page("full-page-recipie"){
+        wp_enqueue_script('varchas-fullPageRcipie', get_template_directory_uri()  . "/assets/js/not_ecommerce/recipiesMTKLandingPage.js", array(), "1.0", true); 
+
+
+        $tempate_directory = get_template_directory_uri();
+        
+        wp_localize_script("varchas-fullPageRcipie", "template_directory", $tempate_directory);
+        
+
+
+
     }elseif (is_page('where-to-buy')) {
         wp_enqueue_script('varchas-whereToBuyPopdown', get_template_directory_uri()  . "/assets/js/not_ecommerce/DropdownPopdown.js", array(), "1.0", true); 
         wp_enqueue_script('varchas-whereToBuyIndex', get_template_directory_uri()  . "/assets/js/not_ecommerce/wheretobuy.js", array(), "1.0", true); 
