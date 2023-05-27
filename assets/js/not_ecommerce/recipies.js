@@ -329,7 +329,7 @@ let popup = document.querySelectorAll(".popup");
 let recipieBtn = document.querySelectorAll(".recepieBtn");
 let drinkContent = document.querySelectorAll(".popupContent");
 let closePopupBtn = document.querySelectorAll(".closePopupBtn");
-popupDisplay();
+// popupDisplay();
 // //////////////////////////////////////////////////////
 // changin content
 // true = left
@@ -361,7 +361,7 @@ RecipieOptions.forEach((option) => {
 
       changeContent(ZZZ);
       declareVariables();
-      popupDisplay();
+      // popupDisplay();
 
       side = !side;
     }, 750);

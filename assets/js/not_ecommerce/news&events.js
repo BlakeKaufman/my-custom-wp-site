@@ -7,7 +7,7 @@ const pageName = window.location.pathname;
 // dictionarys
 const eventsContent = [
   {
-    img: "./assets/images/newsPostBackground/cheers.png",
+    img: "/assets/images/not_ecommerce/newsPostBackground/cheers.png",
     date: "November 5, 2022",
     time: "5:30pm IST",
     title: "Bourbon Fest",
@@ -20,7 +20,7 @@ const eventsContent = [
     type: "News_Events",
   },
   {
-    img: "./assets/images/newsPostBackground/group.png",
+    img: "/assets/images/not_ecommerce/newsPostBackground/group.png",
     date: "September 5, 2022",
     time: "5:30pm IST",
     title: "Bourbon Fest",
@@ -33,7 +33,7 @@ const eventsContent = [
     type: "News_Events",
   },
   {
-    img: "./assets/images/newsPostBackground/group.png",
+    img: "/assets/images/not_ecommerce/newsPostBackground/group.png",
     date: "Febuary 25, 2022",
     time: "5:30pm IST",
     title: "Bourbon Fest",
@@ -48,7 +48,7 @@ const eventsContent = [
     type: "News_Events",
   },
   {
-    img: "./assets/images/newsPostBackground/group.png",
+    img: "/assets/images/not_ecommerce/newsPostBackground/group.png",
     date: "November 5, 2022",
     time: "5:30pm IST",
     title: "Bourbon Fest",
@@ -64,7 +64,7 @@ const eventsContent = [
 ];
 const newsContent = [
   {
-    img: "./assets/images/newsPostBackground/group.png",
+    img: "/assets/images/not_ecommerce/newsPostBackground/group.png",
     date: "November 5, 2022",
     title: "Total Beverage Liquor – Tasting",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -74,7 +74,7 @@ const newsContent = [
     type: "News_Events",
   },
   {
-    img: "./assets/images/newsPostBackground/group.png",
+    img: "/assets/images/not_ecommerce/newsPostBackground/group.png",
     date: "November 5, 2022",
     title: "Total Beverage Liquor – Tasting",
     desc: "The Ypsilanti bourbon fest was a huge success. Between the location and atmosphere, this event was a blast.",
@@ -84,7 +84,7 @@ const newsContent = [
     type: "News_Events",
   },
   {
-    img: "./assets/images/newsPostBackground/group.png",
+    img: "/assets/images/not_ecommerce/newsPostBackground/group.png",
     date: "November 5, 2022",
     title: "Total Beverage Liquor – Tasting",
     desc: "The Ypsilanti bourbon fest was a huge success. Between the location and atmosphere, this event was a blast.",
@@ -94,7 +94,7 @@ const newsContent = [
     type: "News_Events",
   },
   {
-    img: "./assets/images/newsPostBackground/group.png",
+    img: "/assets/images/not_ecommerce/newsPostBackground/group.png",
     date: "November 5, 2022",
     title: "Total Beverage Liquor – Tasting",
     desc: "The Ypsilanti bourbon fest was a huge success. Between the location and atmosphere, this event was a blast.",
@@ -104,7 +104,7 @@ const newsContent = [
     type: "News_Events",
   },
   {
-    img: "./assets/images/newsPostBackground/group.png",
+    img: "/assets/images/not_ecommerce/newsPostBackground/group.png",
     date: "November 5, 2022",
     title: "Total Beverage Liquor – Tasting",
     desc: "The Ypsilanti bourbon fest was a huge success. Between the location and atmosphere, this event was a blast.",
@@ -130,7 +130,7 @@ function addPostsToPage(postDictonary) {
       
          <div class="post">
           <div class="imgContainer">
-            <img src="${post.img}" alt="" />
+            <img src="${template_directory}${post.img}" alt="" />
           </div>
           <div class="textContainer">
             <span class="title">${post.title}</span>
@@ -182,7 +182,7 @@ function addPostsToPage(postDictonary) {
             <div class="readMoreBtn">
             <a href="postPage.html?id=${post.postID}&type=${post.type}">${post.BTNText}
             </a>
-            <img src="./assets/images/arrow-right-short.svg" alt="" />
+            <img src="${template_directory}/assets/images/icons/arrow-right-short.svg" alt="" />
             
           </div>
         </div>
