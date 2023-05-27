@@ -9,7 +9,7 @@ const blogContentContainer = document.querySelector(
 
 const postContent = [
   {
-    img: "./assets/images/sherryCocktailsBLOGimg/NoPath - Copy@2x.png",
+    img: "/assets/images/not_ecommerce/coctailsBlogImg.png",
     date: "Jan 19, 2023",
     title: "Sherry Cocktails – Lower Your ABV",
     desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
@@ -17,7 +17,7 @@ const postContent = [
     type: "blog",
   },
   {
-    img: "./assets/images/BlackFridayBLOGimg/NoPath - Copy (2)@2x.png",
+    img: "/assets/images/not_ecommerce/colorfulBottles.png",
     date: "Jan 10, 2023",
     title: "Black Friday Whiskey 2022",
     desc: "It’s Black Friday, yet again. The strange, American-exported shopping holiday, packed with deals and occasional scrums in department stores. We’re not fans of fighting over whisky, so have again – for a 6th year –…",
@@ -25,7 +25,7 @@ const postContent = [
     type: "blog",
   },
   {
-    img: "./assets/images/Whiskey101Blogimg/NoPath - Copy (3)@2x.png",
+    img: "/assets/images/not_ecommerce/whiskeyBlogImg.png",
     date: "Dec 25, 2022",
     title: "Whiskey 101 – Part One: A Begginer's Guide",
     desc: "The world of whisky is wide and can be confusing. Here’s a short guide to help you interpret what’s on a label and make sure you are picking up the right bottle.",
@@ -33,7 +33,7 @@ const postContent = [
     type: "blog",
   },
   {
-    img: "./assets/images/sherryCocktailsBLOGimg/NoPath - Copy@2x.png",
+    img: "/assets/images/not_ecommerce/coctailsBlogImg.png",
     date: "Jan 19, 2023",
     title: "Sherry Cocktails – Lower Your ABV",
     desc: "Dropping the spirits from your Friday night cocktail, doesn’t have to mean compromising on flavour. Fortified wines deliver complexity in the same way spirits do without the alcoholic heft. Sherry in particular, with its flavour",
@@ -41,7 +41,7 @@ const postContent = [
     type: "blog",
   },
   {
-    img: "./assets/images/BlackFridayBLOGimg/NoPath - Copy (2)@2x.png",
+    img: "/assets/images/not_ecommerce/colorfulBottles.png",
     date: "Jan 10, 2023",
     title: "Black Friday Whiskey 2022",
     desc: "It’s Black Friday, yet again. The strange, American-exported shopping holiday, packed with deals and occasional scrums in department stores. We’re not fans of fighting over whisky, so have again – for a 6th year –…",
@@ -49,7 +49,7 @@ const postContent = [
     type: "blog",
   },
   {
-    img: "./assets/images/Whiskey101Blogimg/NoPath - Copy (3)@2x.png",
+    img: "/assets/images/not_ecommerce/whiskeyBlogImg.png",
     date: "Dec 25, 2022",
     title: "Whiskey 101 – Part One: A Begginer's Guide",
     desc: "The world of whisky is wide and can be confusing. Here’s a short guide to help you interpret what’s on a label and make sure you are picking up the right bottle.",
@@ -79,7 +79,7 @@ function loadContent() {
         <div class="post">
           <div class="imgContainer">
             <img
-              src="${post.img}"
+              src="${template_directory}${post.img}"
               alt=""
               srcset=""
             />
@@ -115,7 +115,7 @@ function loadContent() {
     }
 
     html += `
-    <a href="./postPage.html?id=${post.postID}&type=${post.type}">
+    <a href="${post_link}?id=${post.postID}&type=${post.type}">
             <span class="postBTN">Continue reading »</span></a>
           </div>
         </div>

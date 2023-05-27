@@ -3,22 +3,22 @@ const videoSectionContainer = document.querySelector(".allVideoContainer");
 
 const allVideos = [
   {
-    src: "./assets/videos/testVideo.mp4",
+    src: "/assets/videos/testVideo.mp4",
     title: "Varchas Whiskty",
     vidId: 1,
   },
   {
-    src: "./assets/videos/testVideo.mp4",
+    src: "/assets/videos/testVideo.mp4",
     title: "Launch of Varchas",
     vidId: 2,
   },
   {
-    src: "./assets/videos/testVideo.mp4",
+    src: "/assets/videos/testVideo.mp4",
     title: "Varchas Whiskty",
     vidId: 3,
   },
   {
-    src: "./assets/videos/testVideo.mp4",
+    src: "/assets/videos/testVideo.mp4",
     title: "Varchas Whiskty",
     vidId: 4,
   },
@@ -31,7 +31,7 @@ function createVideos() {
     <div class="videoContainer">
         <video
           class="video"
-          src="${video.src}"
+          src="${template_directory}${video.src}"
           muted
         ></video>
 
