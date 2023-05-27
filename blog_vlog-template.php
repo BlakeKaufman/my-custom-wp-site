@@ -9,7 +9,7 @@ Template Name: Blog and Vlog
 
 <!-- //////////////////////////////// -->
 <div class="banner">
-      <img src="./assets/images/BlogTopBanner/Top Banner.png" alt="" />
+      <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/blogAndVlogBanner.png" alt="" />
       <!-- <span>Blog</span> -->
     </div>
     <div class="mainBlog">
@@ -23,7 +23,7 @@ Template Name: Blog and Vlog
               <input type="text" name="#" id="#" placeholder="Search" />
             </form>
             <div class="SearchIcon">
-              <img src="./assets/images/search.svg" alt="" srcset="" />
+              <img src="<?= get_template_directory_uri()?>/assets/images/icons/search.svg" alt="" srcset="" />
             </div>
           </div>
         </div>
@@ -52,7 +52,7 @@ Template Name: Blog and Vlog
               <div class="header">
                 <img
                   class="backgroundImage"
-                  src="./assets/images/BourbonGirl/clucb_bck.png"
+                  src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/clucb_bck.png"
                   alt=""
                   srcset=""
                 />

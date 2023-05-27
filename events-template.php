@@ -9,7 +9,7 @@ Template Name: Events
 
 <!-- //////////////////////////////// -->
 <div class="banner">
-      <img src="./assets/images/EventsTopBanner/Top Banner.png" alt="" />
+      <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/eventsTopBanner.png" alt="" />
       <!-- <span>Events</span> -->
     </div>
     <section class="mainContent news">

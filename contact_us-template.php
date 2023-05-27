@@ -11,7 +11,7 @@ Template Name: Contact Us
 <section class="mainContact">
       <img
         class="backgroundContact"
-        src="./assets/images/OurDistillaryBackground.png"
+        src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/OurDistillaryBackground.png"
         alt=""
         srcset=""
       />
@@ -101,7 +101,7 @@ Template Name: Contact Us
         <div class="header">
           <img
             class="backgroundImage"
-            src="./assets/images/BourbonGirl/clucb_bck.png"
+            src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/clucb_bck.png"
             alt=""
             srcset=""
           />

@@ -11,7 +11,7 @@ Template Name: Videos
 <section class="videos">
       <div class="backgroundVideo">
         <video
-          src="./assets/videos/production ID_4457027Mobile.mp4"
+          src="<?= get_template_directory_uri()?>/assets/videos/testVideo.mp4"
           autoplay
           loop
           muted

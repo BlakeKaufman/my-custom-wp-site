@@ -63,6 +63,10 @@ function varchas_load_custom_styles() {
         wp_enqueue_style('blog-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css',array(), "1.0", 'all');
         wp_enqueue_style('blog-styles-contactForm', get_template_directory_uri() . '/assets/css/not_ecommerce/contactForm.css',array(), "1.0", 'all');
 
+    }elseif (is_page('Post Page')) {
+        wp_enqueue_style('events-news-index', get_template_directory_uri() . '/assets/css/not_ecommerce/news&eventsIndex.css',array(), "1.0", 'all');
+        wp_enqueue_style('postPage-index', get_template_directory_uri() . '/assets/css/not_ecommerce/postPage.css',array(), "1.0", 'all');
+
     }elseif (is_page('videos')) {
         wp_enqueue_style('videos-style-videos', get_template_directory_uri() . '/assets/css/not_ecommerce/videos.css',array(), "1.0", 'all');
         wp_enqueue_style('videos-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css',array(), "1.0", 'all');
@@ -153,24 +157,45 @@ function varchas_register_scripts(){
         wp_enqueue_script('varchas-whereToBuyIndex', get_template_directory_uri()  . "/assets/js/not_ecommerce/wheretobuy.js", array(), "1.0", true); 
 
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
-    }elseif (is_page('news')) {
+    }elseif (is_page('news') || is_page('events-and-tastings') ) {
         wp_enqueue_script('varchas-news', get_template_directory_uri()  . "/assets/js/not_ecommerce/news&events.js", array(), "1.0", true); 
         wp_enqueue_script('varchas-newsPagination', get_template_directory_uri()  . "/assets/js/not_ecommerce/eventsPagination.js", array(), "1.0", true); 
 
         $tempate_directory = get_template_directory_uri();
+        $link_to_post_page = esc_url( get_permalink( get_page_by_title( 'Post Page' ) ) );
+
         
         wp_localize_script("varchas-news", "template_directory", $tempate_directory);
+        wp_localize_script("varchas-news", "post_link", $link_to_post_page);
 
-        // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
-    }elseif (is_page('events-and-tastings')) {
-        wp_enqueue_script('varchas-news', get_template_directory_uri()  . "/assets/js/not_ecommerce/news&events.js", array(), "1.0", true); 
-        wp_enqueue_script('varchas-newsPagination', get_template_directory_uri()  . "/assets/js/not_ecommerce/eventsPagination.js", array(), "1.0", true); 
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
     }elseif (is_page('blog-and-vlog')) {
         wp_enqueue_script('varchas-blogIndex', get_template_directory_uri()  . "/assets/js/not_ecommerce/blog.js", array(), "1.0", true); 
+
+
+        $tempate_directory = get_template_directory_uri();
+        $link_to_post_page = esc_url( get_permalink( get_page_by_title( 'Post Page' ) ) );
+
+        
+        wp_localize_script("varchas-blogIndex", "template_directory", $tempate_directory);
+        wp_localize_script("varchas-blogIndex", "post_link", $link_to_post_page);
+
+
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
+    }elseif (is_page('Post Page')) {
+
+       
+
+        wp_enqueue_script('varchas-postDatabase', get_template_directory_uri()  . "/assets/js/not_ecommerce/postDatabase.js", array(), "1.0", true); 
+        wp_enqueue_script('varchas-postPageIndex', get_template_directory_uri()  . "/assets/js/not_ecommerce/postPage.js", array(), "1.0", true); 
+
     }elseif (is_page('videos')) {
         wp_enqueue_script('varchas-videosIndex', get_template_directory_uri()  . "/assets/js/not_ecommerce/videos.js", array(), "1.0", true); 
+
+        $tempate_directory = get_template_directory_uri();
+        
+        wp_localize_script("varchas-videosIndex", "template_directory", $tempate_directory);
+        
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
     }elseif (is_page('contact-us')) {
         wp_enqueue_script('varchas-contactDropdown', get_template_directory_uri()  . "/assets/js/not_ecommerce/DropdownPopdown.js", array(), "1.0", true); 
