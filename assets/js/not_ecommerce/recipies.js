@@ -305,7 +305,7 @@ function changeContent(option) {
             <img src="${template_directory}/assets/images/not_ecommerce/${recipe.img}" alt="" srcset="" />
           </div>
           <span class="title">${recipe.title}</span>
-          <a href='${full_recipie_link}?${recipe.title}'class="recepieBtn">View Recipe</a>
+          <a href='${template_directory}/full_page_recipie-template.php?${recipe.title}'class="recepieBtn">View Recipe</a>
           </div>
         </div>
       `;

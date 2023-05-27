@@ -115,7 +115,7 @@ function loadContent() {
     }
 
     html += `
-    <a href="${post_link}?id=${post.postID}&type=${post.type}">
+    <a href="${template_directory}/post_page-template.php?id=${post.postID}&type=${post.type}">
             <span class="postBTN">Continue reading »</span></a>
           </div>
         </div>
