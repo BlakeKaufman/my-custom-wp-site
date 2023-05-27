@@ -7,6 +7,17 @@ Template Name: Events
 
 <?php get_header(); ?> <!-- calls the header file though  a bilt in function get_template_part( 'header' ); -->
 
+
+<!-- //////////////////////////////// -->
+    <!-- Scroll to top btn start -->
+    <!-- //////////////////////////////// -->
+    <div class="scrollToTop">
+      <span>TOP</span>
+    </div>
+    <!-- //////////////////////////////// -->
+    <!-- Scroll to top btn end -->
+    <!-- //////////////////////////////// -->
+
 <!-- //////////////////////////////// -->
 <div class="banner">
       <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/eventsTopBanner.png" alt="" />

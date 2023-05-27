@@ -129,7 +129,7 @@ function varchas_register_scripts(){
         wp_enqueue_script('varchas-ryeWhiskeySlideshow', get_template_directory_uri()  . "/assets/js/not_ecommerce/slideshow.js", array(), "1.0", true);  
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
     }elseif (is_page('recipies')) {
-        wp_enqueue_script('varchas-recipiesDisplay', get_template_directory_uri()  . "/assets/js/not_ecommerce/reipeDisplay.js", array(), "1.0", true); 
+        wp_enqueue_script('varchas-recipiesDisplay', get_template_directory_uri()  . "/assets/js/not_ecommerce/recipeDisplay.js", array(), "1.0", true); 
         wp_enqueue_script('varchas-recipiesindex', get_template_directory_uri()  . "/assets/js/not_ecommerce/recipies.js", array(), "1.0", true);   
 
 
@@ -174,11 +174,11 @@ function varchas_register_scripts(){
 
 
         $tempate_directory = get_template_directory_uri();
-        $link_to_post_page = esc_url( get_permalink( get_page_by_title( 'Post Page' ) ) );
+       
 
         
         wp_localize_script("varchas-blogIndex", "template_directory", $tempate_directory);
-        wp_localize_script("varchas-blogIndex", "post_link", $link_to_post_page);
+        
 
 
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
