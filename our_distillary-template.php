@@ -23,7 +23,7 @@ Template Name: Our Distillary
     <section class="main">
       <img
         class="mainBackground"
-        src="./assets/images/OurDistillaryBackground.png"
+        src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/OurDistillaryBackground.png"
         alt=""
         srcset=""
       />
@@ -88,7 +88,7 @@ Template Name: Our Distillary
           <span class="contentDesc">+1 855-827-2427</span>
         </div>
         <div class="buttons">
-          <a href="./contactUs.html"
+          <a href="<?= esc_url( get_permalink( get_page_by_title( 'Contact Us' ) ) );?>"
             ><span class="bookTourBtn">Book Distillery Tour</span></a
           >
         </div>

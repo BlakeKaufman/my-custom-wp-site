@@ -44,6 +44,12 @@ function varchas_load_custom_styles() {
         wp_enqueue_style('recipies-style-recipiespage', get_template_directory_uri() . '/assets/css/not_ecommerce/recipies-recipiespage.css',array(), "1.0", 'all');
         wp_enqueue_style('recipies-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css',array(), "1.0", 'all');
 
+    }elseif (is_page("full-page-recipie")){
+
+        wp_enqueue_style('full-recipies-page', get_template_directory_uri() . '/assets/css/not_ecommerce/recipiesMTKLandingPage.css',array(), "1.0", 'all');
+
+
+
     }elseif (is_page('where-to-buy')) {
         wp_enqueue_style('where_to_buy-style-wheretobuy', get_template_directory_uri() . '/assets/css/not_ecommerce/wheretobuy.css',array(), "1.0", 'all');
         wp_enqueue_style('where_to_buy-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css',array(), "1.0", 'all');

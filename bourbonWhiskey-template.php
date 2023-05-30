@@ -82,7 +82,7 @@ Template Name: Bourbon Whiksey
                 >90 Proof, 45% Alc/Vol, Available in 750 ml Bottles</span
               >
               <div class="OtherBoubonBtn">
-                <a href="./ryeWhiskey.html">
+                <a href="<?= esc_url( get_permalink( get_page_by_title( 'Rye Whiksey' ) ) );?>">
                   You may also like: Straight Rye Whiskey</a
                 >
                 <img
