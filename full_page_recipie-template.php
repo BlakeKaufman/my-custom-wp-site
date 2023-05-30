@@ -57,7 +57,7 @@ Template Name: Full Recipies Page
       <div class="othersContainer">
         <div class="othersRecipie">
           <div class="img">
-            <img src=".<?= get_template_directory_uri()?>/assets/images/not_ecommerce/BB_smash.webp" alt="" />
+            <img src="<?= get_template_directory_uri()?>/assets/images/not_ecommerce/BB_smash.webp" alt="" />
           </div>
           <span class="othersTitle">The "V"</span>
         </div>

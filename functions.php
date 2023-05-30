@@ -47,6 +47,7 @@ function varchas_load_custom_styles() {
     }elseif (is_page("full-recipes-page")){
 
         wp_enqueue_style('full-recipies-page', get_template_directory_uri() . '/assets/css/not_ecommerce/recipiesMTKLandingPage.css',array(), "1.0", 'all');
+        wp_enqueue_style('full_page_recipies-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css',array(), "1.0", 'all');
 
 
 
@@ -59,7 +60,7 @@ function varchas_load_custom_styles() {
         wp_enqueue_style('news-style-news', get_template_directory_uri() . '/assets/css/not_ecommerce/news.css',array(), "1.0", 'all');
         wp_enqueue_style('news-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css',array(), "1.0", 'all');
 
-    }elseif (is_page('events-and-tastings')) {
+    }elseif (is_page('events')) {
         wp_enqueue_style('events-style-index', get_template_directory_uri() . '/assets/css/not_ecommerce/news&eventsIndex.css',array(), "1.0", 'all');
         wp_enqueue_style('events-style-events', get_template_directory_uri() . '/assets/css/not_ecommerce/events.css',array(), "1.0", 'all');
         wp_enqueue_style('events-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css',array(), "1.0", 'all');
@@ -152,9 +153,11 @@ function varchas_register_scripts(){
 
 
         $tempate_directory = get_template_directory_uri();
+        $recipies_page = esc_url( get_permalink( get_page_by_title( 'Recipies' ) ) );
 
         wp_localize_script("varchas-recipiesindex", "template_directory", $tempate_directory);
         wp_localize_script("varchas-fullPageRcipie", "template_directory", $tempate_directory);
+        wp_localize_script("varchas-fullPageRcipie", "recipies_page", $recipies_page);
         
 
 
@@ -164,7 +167,7 @@ function varchas_register_scripts(){
         wp_enqueue_script('varchas-whereToBuyIndex', get_template_directory_uri()  . "/assets/js/not_ecommerce/wheretobuy.js", array(), "1.0", true); 
 
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
-    }elseif (is_page('news') || is_page('events-and-tastings') ) {
+    }elseif (is_page('news') || is_page('events') ) {
         wp_enqueue_script('varchas-news', get_template_directory_uri()  . "/assets/js/not_ecommerce/news&events.js", array(), "1.0", true); 
         wp_enqueue_script('varchas-newsPagination', get_template_directory_uri()  . "/assets/js/not_ecommerce/eventsPagination.js", array(), "1.0", true); 
 
@@ -181,10 +184,12 @@ function varchas_register_scripts(){
 
 
         $tempate_directory = get_template_directory_uri();
+        $link_to_post_page = esc_url( get_permalink( get_page_by_title( 'Post Page' ) ) );
        
 
         
         wp_localize_script("varchas-blogIndex", "template_directory", $tempate_directory);
+        wp_localize_script("varchas-blogIndex", "post_link", $link_to_post_page);
         
 
 

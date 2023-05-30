@@ -8,6 +8,15 @@ Template Name: Videos
 <?php get_header(); ?> <!-- calls the header file though  a bilt in function get_template_part( 'header' ); -->
 <!-- //////////////////////////////// -->
 
+<!-- //////////////////////////////// -->
+    <!-- Scroll to top btn start -->
+    <!-- //////////////////////////////// -->
+    <div class="scrollToTop">
+      <span>TOP</span>
+    </div>
+    <!-- //////////////////////////////// -->
+    <!-- Scroll to top btn end -->
+
 <section class="videos">
       <div class="backgroundVideo">
         <video
