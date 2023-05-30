@@ -99,7 +99,7 @@ viewAllRecBTN.addEventListener("click", function (e) {
     // window.open("https://mibourbontest.netlify.app/recipies.html", "_self");
 
     // wp
-    window.open(`${template_directory}/recipies-template.php`);
+    window.open(`${recipies_page}`);
   } else {
     // console.log("rye");
     // live server
@@ -108,7 +108,7 @@ viewAllRecBTN.addEventListener("click", function (e) {
     // window.open("https://mibourbontest.netlify.app/recipies.html", "_self");
 
     // wp
-    window.open(`${template_directory}/recipies-template.php`);
+    window.open(`${template_directory}`);
   }
 });
 

@@ -180,7 +180,7 @@ function addPostsToPage(postDictonary) {
 
     html += `</span>
             <div class="readMoreBtn">
-            <a href="${template_directory}/post_page-template.php?id=${post.postID}&type=${post.type}">${post.BTNText}
+            <a href="${post_link}/?id=${post.postID}&type=${post.type}">${post.BTNText}
             </a>
             <img src="${template_directory}/assets/images/icons/arrow-right-short.svg" alt="" />
             
