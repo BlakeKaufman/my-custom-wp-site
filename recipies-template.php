@@ -77,4 +77,5 @@ Template Name: Recipies
     </section>
 
 
+
 <?php get_footer(); ?> <!-- calls the footer file though  a bilt in function get_template_part( 'footer' ); -->

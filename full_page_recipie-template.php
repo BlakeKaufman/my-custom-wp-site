@@ -49,6 +49,8 @@ Template Name: Full Recipies Page
       </div> -->
     </section>
 
+    
+
     <section class="other_recipies">
       <div class="header">MORE VARCHAS RECIPES</div>
 

@@ -44,7 +44,7 @@ function varchas_load_custom_styles() {
         wp_enqueue_style('recipies-style-recipiespage', get_template_directory_uri() . '/assets/css/not_ecommerce/recipies-recipiespage.css',array(), "1.0", 'all');
         wp_enqueue_style('recipies-style-ScrollToTopBTN', get_template_directory_uri() . '/assets/css/not_ecommerce/scrollToTopBTN.css',array(), "1.0", 'all');
 
-    }elseif (is_page("full-page-recipie")){
+    }elseif (is_page("full-recipes-page")){
 
         wp_enqueue_style('full-recipies-page', get_template_directory_uri() . '/assets/css/not_ecommerce/recipiesMTKLandingPage.css',array(), "1.0", 'all');
 
@@ -141,18 +141,19 @@ function varchas_register_scripts(){
 
 
         $tempate_directory = get_template_directory_uri();
-        $full_page_recipie = esc_url( get_permalink( get_page_by_title( 'Full Recipies Page' ) ) );
+        $full_page_recipie = esc_url( get_permalink( get_page_by_title( 'Full Recipes Page' ) ) );
         wp_localize_script("varchas-recipiesindex", "template_directory", $tempate_directory);
         wp_localize_script("varchas-recipiesindex", "full_recipie_link", $full_page_recipie);
 
         // wp_enqueue_style('contact-styles', get_template_directory_uri() . 'assets/css/ecommerce/contact-styles.css');
-    }elseif (is_page("full-page-recipie")){
+    }elseif (is_page("full-recipes-page")){
         wp_enqueue_script('varchas-recipiesindex', get_template_directory_uri()  . "/assets/js/not_ecommerce/recipies.js", array(), "1.0", true);
         wp_enqueue_script('varchas-fullPageRcipie', get_template_directory_uri()  . "/assets/js/not_ecommerce/recipiesMTKLandingPage.js", array(), "1.0", true); 
 
 
         $tempate_directory = get_template_directory_uri();
-        
+
+        wp_localize_script("varchas-recipiesindex", "template_directory", $tempate_directory);
         wp_localize_script("varchas-fullPageRcipie", "template_directory", $tempate_directory);
         
 
