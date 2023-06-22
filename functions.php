@@ -289,6 +289,7 @@ add_action('wp_enqueue_scripts', "varchas_register_scripts" );
 
 
 
+
 // function my_custom_theme_sidebar() {
 //     register_sidebar( array(
 //         'name' => __( 'Primary Sidebar', 'my-custom-theme' ),
@@ -302,6 +303,123 @@ add_action('wp_enqueue_scripts', "varchas_register_scripts" );
 
 // add_theme_support( 'post-thumbnails' ); //adding post thumbnaisl
 // add_image_size( 'my-custom-image-size', 640, 999 ); // changing base image dimensions
+
+
+
+function varchas_theme_setup(){
+	add_theme_support('menus');
+
+	//register_nav_menus('primary', 'Primary header navigation');
+
+
+
+}
+
+add_action('init','varchas_theme_setup');
+
+//add_theme_support('custom-background');
+//add_theme_support('custom-header');
+
+
+
+function varchas_footer_callout($wp_customize){
+	$wp_customize->add_section('varchas-footer-callout-section',array(
+		'title' => 'Footer callout'
+	));
+
+
+	//----------------------//
+	//Footer adress
+	//---------------------//
+
+	$wp_customize->add_setting('varchas-footer-callout-address',array(
+		//'default'=> 'Example header text'
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize,'varchas-footer-callout-address-control',array(
+	'label'=>'Address',
+	'section'=>'varchas-footer-callout-section',
+	'settings'=>'varchas-footer-callout-address'
+	)));
+
+	//----------------------//
+	//Footer email|phone
+	//---------------------//
+
+	$wp_customize->add_setting('varchas-footer-callout-email',array(
+		//'default'=> 'Example header text'
+	));
+
+	$wp_customize->add_setting('varchas-footer-callout-phone',array(
+		//'default'=> 'Example header text'
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize,'varchas-footer-callout-email-control',array(
+	'label'=>'Email',
+	'section'=>'varchas-footer-callout-section',
+	'settings'=>'varchas-footer-callout-email'
+	)));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize,'varchas-footer-callout-phone-control',array(
+	'label'=>'Phone Number',
+	'section'=>'varchas-footer-callout-section',
+	'settings'=>'varchas-footer-callout-phone'
+	)));
+
+	//----------------------//
+	//Footer adress
+	//---------------------//
+
+	$wp_customize->add_setting('varchas-footer-callout-copyright',array(
+		//'default'=> 'Example header text'
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize,'varchas-footer-callout-copyright-control',array(
+	'label'=>'Copyright Year',
+	'section'=>'varchas-footer-callout-section',
+	'settings'=>'varchas-footer-callout-copyright'
+	)));
+
+
+}
+
+add_action('customize_register','varchas_footer_callout');
+
+
+
+
+
+/**
+ * Register a custom menu page.
+ */
+function wpdocs_register_my_custom_menu_page(){
+	add_menu_page( 
+		__( 'Custom Menu Title', 'textdomain' ), // title
+		'Varchas', // title of menu item
+		'manage_options',
+		'my-top-level-slug', //menus slug to add sub menus too
+		'my_custom_menu_page', //Calls the other function to get page description
+		plugins_url( 'myplugin/images/icon.png' ),
+		59 //location on admin sidebar
+	); 
+}
+add_action( 'admin_menu', 'wpdocs_register_my_custom_menu_page' );
+
+/**
+ * Display a custom menu page
+ */
+function my_custom_menu_page(){
+	// require_once  get_template_directory().''; // call location of php custom file
+
+	esc_html_e( get_template_directory(), 'textdomain' );	
+}
+
+
+
+add_submenu_page( 'my-top-level-slug', 'My Custom Page', 'My Custom Page',
+	'manage_options', 'my-secondary-level-slug');
+add_submenu_page( 'my-top-level-slug', 'My Custom Submenu Page', 'My Custom Submenu Page',
+	'manage_options', 'my-secondary-slug');
 
 
 

@@ -14,6 +14,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+
+
     <link
       rel="shortcut icon"
       href="<?= get_template_directory_uri()?>/assets/images/icons/logo.png"
@@ -39,8 +41,9 @@
       <div class="navContainerDesktop">
         <a href="<?= get_home_url(); ?>"
           ><div class="logo">
-            <img src="<?= get_template_directory_uri()?>/assets/images/icons/logo.png" alt="" srcset="" />
-            <span>VARCHAS</span>
+		<img src="<?php header_image();?>"/>
+            <!-- <img src="<?= get_template_directory_uri()?>/assets/images/icons/logo.png" alt="" srcset="" />-->
+           <!-- <span>VARCHAS</span> -->
           </div></a
         >
         <ul class="navigationContainer">

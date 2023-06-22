@@ -8,21 +8,24 @@
           <!-- owned start -->
           <div class="ownedOperated">
             <span class="header">Owned and operated by,</span>
-            <span
+		<span><?php echo get_theme_mod('varchas-footer-callout-address')?></span>
+          <!--  <span
               >Shankar Distillers LLC, 300 Enterprise Court, Bloomfield Hills,
               MI 48302</span
-            >
+            > -->
           </div>
           <!-- owned end -->
           <!-- contact start -->
           <div class="contact">
             <div class="container">
               <span class="header">Email:</span>
-              <span class="answer">info@mibourbon.com</span>
+            <!--  <span class="answer">info@mibourbon.com</span> -->
+ 	      <span class="answer"><?php echo get_theme_mod('varchas-footer-callout-email')?></span>
             </div>
             <div class="container">
               <span class="header">Phone:</span>
-              <span class="answer">+1 855-827-2428</span>
+             <!-- <span class="answer">+1 855-827-2428</span> -->
+	      <span class="answer"><?php echo get_theme_mod('varchas-footer-callout-phone')?></span>
             </div>
           </div>
           <!-- contact end  -->
@@ -61,7 +64,7 @@
       </div>
       <div class="bottom">
         <span class="rights"
-          >© 2022 Shankar Distillers LLC. – All Rights Reserved</span
+          >@ <?php echo get_theme_mod('varchas-footer-callout-copyright')?> Shankar Distillers LLC. – All Rights Reserved</span
         >
         <div class="socials">
           <img src="<?= get_template_directory_uri()?>/assets/images/icons/facebook.svg" alt="" srcset="" />

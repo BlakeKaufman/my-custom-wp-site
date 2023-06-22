@@ -38,6 +38,53 @@ Template Name: Recipies
     </div>
     <section class="signitureRec">
       <div class="signitureRecContainer">
+
+	<?php
+	
+	$args = array(
+		
+		'catagory_name' => 'Recipies',
+		'tag' => 'bourbon'
+	);
+
+	$query = new WP_Query($args);
+
+
+	if ($query->have_posts()){
+		while($query->have_posts()){
+			$query->the_post();
+
+	?>
+	<div class="recepeContainer">
+          <div class="imgContainer">
+		<?php echo get_the_post_thumbnail();?>
+          </div>
+	  <span class="title"><?php echo the_title();?></span>
+	  <a class="recepieBtn" href="<?php echo esc_url(get_permalink(get_page_by_title('Full Recipes Page')));?>?<?php echo the_title();?>">View Recipie</a>
+            
+        </div>
+	<?php
+
+
+			//echo the_title();
+			//echo the_content();
+			//echo get_the_post_thumbnail();
+
+		}
+
+
+	}
+
+
+	wp_reset_postdata();
+
+
+
+
+	?>
+
+
+
         <!-- <div class="recepeContainer">
           <img class="closePopupBtn" src="./assets/images/xIcon.svg" alt="" />
           <div class="imgContainer">
@@ -78,4 +125,4 @@ Template Name: Recipies
 
 
 
-<?php get_footer(); ?> <!-- calls the footer file though  a bilt in function get_template_part( 'footer' ); -->
+<?php //get_footer(); ?> <!-- calls the footer file though  a bilt in function get_template_part( 'footer' ); -->
