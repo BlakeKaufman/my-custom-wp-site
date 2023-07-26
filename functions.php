@@ -406,7 +406,7 @@ function wpdocs_register_my_custom_menu_page(){
 add_action( 'admin_menu', 'wpdocs_register_my_custom_menu_page' );
 
 /**
- * Display a custom menu page
+ * Display a custom subm menu page
  */
 function my_custom_menu_page(){
 	// require_once  get_template_directory().''; // call location of php custom file
@@ -416,10 +416,121 @@ function my_custom_menu_page(){
 
 
 
-add_submenu_page( 'my-top-level-slug', 'My Custom Page', 'My Custom Page',
-	'manage_options', 'my-secondary-level-slug');
-add_submenu_page( 'my-top-level-slug', 'My Custom Submenu Page', 'My Custom Submenu Page',
-	'manage_options', 'my-secondary-slug');
+add_submenu_page( 'my-top-level-slug', 'Dashboard', 'Dashboard',
+	'manage_options','/template_dashboard.php'); //last one is the location of the file that it opens
+add_submenu_page( 'my-top-level-slug', 'Template Attributes', 'Template Attributes',
+	'manage_options', '/template_admin_parts/attributes.php');
+
+
+
+
+
+
+
+
+
+//-------------------//
+//seperating post types in wordpress
+//-------------------//
+
+function add_custom_submenu(){
+	
+	add_submenu_page(
+		'edit.php',
+		'recipies_menu',
+		'Recipies',
+		'manage_options',
+		'recipies-menu',
+		'recipies_submenu_callback',
+		2
+	);
+
+
+}
+
+function recipies_submenu_callback(){
+	$admin_url = network_admin_url();
+	
+	if (current_user_can('edit_posts')){
+		// create a custom page where you can see only recipies, takes you to an edit function, and also quick edit
+		echo '<h1> Custom submenu content</h1>';
+		echo '<a href="' .$admin_url . '/post-new.php' . ';?>">Testing</a>';
+
+		
+
+	}else{
+		echo '<h1> You cannot edit posts </h1>';
+	}
+
+
+}
+
+add_action('admin_menu', 'add_custom_submenu', 999);
+
+
+
+//------------------------------------//
+// Rcipies menu page
+//------------------------------------//
+
+
+if (isset($_POST['submit_button'])){
+
+	$my_post = array(
+		'post_title' => 'My post',
+		'post_content' => 'testing post',
+		'post_status' => 'publilsh',
+		'post_author' => 1,
+		'post_catagory' => array(8,39)
+
+);
+
+wp_insert_post($my_post);
+
+}else{
+	$test = "no";
+}
+
+/**
+ * Register a custom menu page.
+ */
+function wpdocs_register_recipies_custom_menu_page(){
+	add_menu_page( 
+		__( 'Custom Menu Title', 'textdomain' ), // title
+		'Recipies', // title of menu item
+		'manage_options',
+		'/template_admin_parts/recipies.php', //menus slug to add sub menus too
+		'', //Calls the other function to get page description
+		plugins_url( 'myplugin/images/icon.png' ),
+		4 //location on admin sidebar
+	); 
+}
+add_action( 'admin_menu', 'wpdocs_register_recipies_custom_menu_page' );
+
+/**
+ * Display a custom subm menu page
+ */
+function recipies_custom_menu_page(){
+	// require_once  get_template_directory().''; // call location of php custom file
+
+   //require get_admin_url(). '/template_admin_parts/recipies.php';
+	
+
+	//$test = "<h1> TEst </h1>";
+
+
+	//esc_html_e( $test, 'textdomain' );	
+esc_html_e( get_template_directory(), 'textdomain' );	
+
+
+}
+
+
+
+add_submenu_page( 'recipies-top-level-slug', 'Dashboard', 'Dashboard',
+	'manage_options','/template_dashboard.php'); //last one is the location of the file that it opens
+add_submenu_page( 'recipies-top-level-slug', 'Template Attributes', 'Template Attributes',
+	'manage_options', '/template_admin_parts/attributes.php');
 
 
 
